@@ -1,0 +1,53 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.get-started {
+  // width: 112.141px;
+  padding: 12px 30px;
+  gap: 12px;
+  border-radius: 4px;
+  background: $foundation-primary-red;
+  box-shadow: 0px 12px 20px 0px rgba(192, 192, 192, 0.35);
+  text-decoration: $anchor-text-decoration;
+  color: #fff;
+  text-align: $center-alignment;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.36px;
+  display: flex;
+  align-items: $center-alignment;
+  text-align: $center-alignment;
+  transition: all 0.5s ease;
+  // backdrop-filter: blur(40px);
+
+  &:hover {
+    @include btn-hover
+  }
+}
+
+.read-more {
+  &:hover {
+    svg {
+      transform: translateX(50%);
+      transition: 0.5s linear;
+    }
+  }
+}
+
+.btn-default {
+  color: white;
+  background: $foundation-primary-orange;
+  position: sticky;
+  top: 50%;
+  bottom: -150px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transform: rotate(90deg);
+  margin-left: -36px;
+  border-color: $foundation-primary-orange;
+  outline: none;
+  border: none;
+  z-index: 10000;
+}

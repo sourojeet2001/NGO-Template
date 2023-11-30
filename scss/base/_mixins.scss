@@ -1,0 +1,179 @@
+@use "../base/variables" as *;
+
+@mixin transition-ease {
+  transition: 0.5s all ease;
+}
+
+@mixin btn-hover {
+  // transition: all 0.5s ease-in-out;
+  background: $foundation-primary-orange;
+  color: black;
+  svg {
+    transform: translateX(50%);
+    transition: 0.5s ease-in;
+    path{
+      stroke: rgb(0, 0, 0);
+    }
+  }
+}
+
+@mixin contact-btn {
+  transition: 0.5s all ease-in-out;
+  background: white;
+  color: black;
+  svg {
+    transform: translateX(50%);
+    transition: 0.5s ease-in;
+  }
+}
+
+@mixin link-hover {
+  color: $foundation-primary-red;
+  transition: 0.5s ease-in-out;
+}
+
+@mixin social-icons {
+  transform: translateY(-14px);
+  transition: 0.5s all ease-in-out;
+  svg {
+    path {
+    fill: #cda274;
+    }
+  }
+}
+
+@mixin project-btn {
+  transition: 0.5s all ease-in-out;
+  fill: #cda274;
+}
+
+@mixin articles-hover {
+  transition: 0.5s all ease-in-out;
+  background: #f4f0ec;
+  .other-details svg > circle {
+    fill: white;
+
+    // &:hover {
+    //   @include project-btn()
+    // }
+  }
+}
+
+@mixin nav-slider {
+  .menu-btn {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 12%;
+    top: 24px;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+  
+    &__burger {
+      position: absolute;
+      right: 0;
+      top: 0.5rem;
+      width: 28px;
+      height: 3px;
+      background-color: black;
+      @include transition-ease;
+  
+      &::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        width: 28px;
+        height: 3px;
+        background: black;
+        @include transition-ease;
+      }
+  
+      &::after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        width: 20px;
+        height: 3px;
+        background: black;
+        @include transition-ease;
+      }
+  
+      &.open{
+        transform: rotate(180deg);
+        background: transparent;
+  
+        &::before {
+          transform: rotate(45deg) translate(5px, 8px);
+        }
+  
+        &::after {
+          width: 28px;
+          transform: rotate(-45deg) translate(3px, -7px);
+        }
+      }
+    }
+  }
+  
+  .primary-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+  
+    &.open {
+      visibility: visible;
+    }
+  
+    .menu-item-list {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      background: #CDA274;
+      list-style-type: none;
+      padding-right: 1rem;
+      transform: translateY(-100%);
+      @include transition-ease;
+  
+      &.open {
+        transform: translateY(0);
+      }
+
+      .search-icon {
+        display: none;
+      }
+    }
+  
+    .menu-items {
+      &.active > a{
+        color: #292F36;
+      }
+  
+      &__link {
+        display: inline-block;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 16px 0;
+        font-weight: 300;
+        @include transition-ease;
+    
+        &:hover {
+          color: #292F36;
+        }
+      }
+    }
+  }
+  
+  @for $i from 1 through 6 {
+    .menu-nav__item:nth-child(#{$i}) {
+      transition-delay: ($i * 0.1s) + 0.15s;
+    }
+  }
+}

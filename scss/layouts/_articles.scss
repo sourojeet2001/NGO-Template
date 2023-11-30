@@ -1,0 +1,136 @@
+@use "../base/mixins" as *;
+@use "../base/variables" as *;
+
+.blogs-header {
+  margin-top: 40px;
+  padding-left: 58px;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid black;
+    width: 40px;
+    margin: 0 1rem;
+    left: 144px;
+    transform: translate(-70px,13px);
+  }
+
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    padding: 12px 0;
+    padding-top: 24px;
+  }
+}
+
+.blogs-wrap {
+  h2 {
+    margin-left: 58px;
+    padding: 30px 0;
+  }
+}
+
+.blogs-box {
+  gap: 28px;
+  margin-bottom: 32px;
+}
+
+.blogs-inner-box {
+  width: 340px;
+  justify-content: flex-start;
+  justify-content: left;
+  text-align: left;
+  padding: 20px;
+}
+.other-details {
+  padding-top: 32px;
+  padding-bottom: 20px;
+  gap: 64px;
+}
+
+.blogs-inner-box:last-child {
+  padding-bottom: 0px;
+}
+
+.blogs-image {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+
+  img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+    width: 100%;
+  }
+}
+.blog-info {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #FCF5E8;
+  margin: 0 6px;
+  position: absolute;
+  bottom: -112px;
+  left: 24px;
+  right: 24px;
+
+  a {
+    color: white;
+    padding: 10px;
+    background: $foundation-primary-red;
+    font-weight: 700;
+    width: 46%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+}
+.blogs-info-inner-box {
+  padding: 10px 10px;
+  gap: 12px;
+}
+.details {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.blogs-category {
+  position: absolute;
+  background: white;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  bottom: 20px;
+  left: 10px;
+  padding: 8px;
+}
+.blogs-title {
+  line-height: 32px;
+  letter-spacing: 0.5px;
+}
+.publication-date {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+  position: absolute;
+  color: white;
+  background: $foundation-primary-orange;
+  bottom: 86px;
+  right: 30px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 50px;
+  text-align: center;
+  font-size: medium;
+  font-weight: 800;
+}
+

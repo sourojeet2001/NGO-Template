@@ -1,0 +1,193 @@
+@use "../base/variables" as *;
+
+// black: #03a9f4;
+$text: #555;
+$invalid: #e91e63;
+$width: 400px;
+$cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
+
+.panelform {
+  // background: $foundation-primary-orange;
+  padding: 32px 0;
+
+  .close {
+    // background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+#slideout {
+  background: $foundation-primary-orange;
+  color: #333;
+  position: fixed;
+  z-index: 9999;
+  top: 100px;
+  // bottom: 50px;
+  // margin-bottom: 10px;
+  right: -520px;
+  width: 500px;
+  height: 80%;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  padding: 50px 0;
+
+  h2,
+  .confirmation {
+    color: $primary-text-color;
+    text-align: center;
+    background: $foundation-primary-orange;
+  }
+}
+#slideout form {
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
+}
+#slideout textarea {
+  display: block;
+  height: 100px;
+  margin-bottom: 6px;
+  width: 250px;
+}
+#slideout.on {
+  right: 0;
+}
+
+.confirmation {
+  display: none;
+}
+
+#slideout form {
+  font-family: "roboto", sans-serif;
+  width: $width + 60px;
+  margin: 100px auto 0;
+  // box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding: 0 0 40px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+#slideout input::-webkit-input-placeholder,
+#slideout textarea::-webkit-input-placeholder, #slideout select::-webkit-input-placeholder {
+  font: inherit;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+    color: #000;
+}
+
+#slideout input,
+#slideout textarea, select {
+  font: inherit;
+  font-size: 0.8em;
+  margin: 28px 25px 10px;
+  width: $width;
+  display: block;
+  border: none;
+  padding: 20px 0 10px;
+  border-bottom: solid 1px black;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, black 4%);
+  background-position: -$width 0;
+  background-size: $width 100%;
+  background-repeat: no-repeat;
+  transition: background 0.3s black;
+  resize: none;
+  overflow: hidden;
+  &:focus::-webkit-input-placeholder {
+    color: black;
+  }
+  &:focus,
+  &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      font-size: 0.8em;
+      transform: translateY(-20px);
+      visibility: visible !important;
+      opacity: 1;
+    }
+  }
+}
+#slideout select {
+  border: none;
+}
+
+#slideout input[type="email"] {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, black 4%);
+  background-position: -400px 0;
+  background-repeat: no-repeat;
+  transition: border-bottom 0.3s ease, background 0.3s ease;
+  & ~ span.validation-text {
+    position: absolute;
+    visibility: hidden;
+    font-family: "roboto", sans-serif;
+    font-size: 0.6em;
+    width: $width;
+    margin-left: 25px;
+    margin-top: -5px;
+    color: white;
+    transition: color 0.3s ease-in-out;
+  }
+  &:not([value=""]) {
+    &::-webkit-input-placeholder {
+      font-size: 0.8em;
+      transform: translateY(-20px);
+      visibility: visible !important;
+      opacity: 1;
+    }
+    &:focus::-webkit-input-placeholder {
+      color: black;
+    }
+    &:focus:not(:valid)::-webkit-input-placeholder {
+      color: $invalid;
+    }
+  }
+  &:focus {
+    background-position: 0 0;
+    &:not(:valid):not([value=""]) {
+      border-bottom: solid 1px $invalid;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 96%,
+        $invalid 4%
+      );
+    }
+  }
+  &:not(:focus):not(:valid):not([value=""]) {
+    &::-webkit-input-placeholder {
+      color: $invalid;
+    }
+    border-bottom: solid 1px $invalid;
+    background-position: 0 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 96%,
+      $invalid 4%
+    );
+    & ~ span.validation-text {
+      visibility: visible;
+      color: $invalid;
+    }
+  }
+}
+.contact-submit-btn {
+  font-family: 'roboto', sans-serif;
+  transition: transform 0.2s $cubic,
+  box-shadow 0.2s $cubic;
+  border: none;
+  background: $foundation-primary-red;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: $width;
+  color: white;
+  margin: 30px 0 0 25px;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  &:hover { 
+    transform: translateY(-2px);
+    box-shadow: 0 5px 6px 0 rgba(0,0,0,0.2);
+  }
+}

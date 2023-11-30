@@ -1,0 +1,31 @@
+.client-header {
+  margin: 50px 0;
+  text-transform: uppercase;
+
+  &::after {
+    display: inline-block;
+    content: "";
+    border-top: 0.5px solid #E5E5E5;
+    width: 70rem;
+    margin: 0 1rem;
+    left: 144px;
+    transform: translate(125px,-22px);
+  }
+}
+
+.clients-wrap {
+  gap: 108px;
+  margin: 10% 0;
+}
+.clients {
+  align-items: center;
+
+  img {
+    object-fit: contain;
+  }
+}
+
+.clients a:hover {
+  transition: 0.9s all ease-in-out;
+  transform: scale(1.3);
+}

@@ -1,0 +1,44 @@
+@use "../base/mixins" as *;
+@use "../base/variables" as *;
+.contactus {
+  border-radius: 70px;
+  background: linear-gradient(90deg, rgba(44, 44, 44, 0.5)), url("../../assets/images/volunteer.jpeg") no-repeat;
+  background-position: center 68%;
+  background-size: cover;
+  gap: 32px;
+  padding: 80px 176px;
+  margin: 40px 0;
+}
+.contact-header {
+  h2, p {
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.contact-btn-primary, .contact-btn-secondary {
+  gap: 10px;
+  padding: 16px 32px;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  background: $foundation-primary-red;
+  box-shadow: 0px 10px 20px 0px #1f2022;
+  
+  &:hover {
+    transition: all 0.9s ease;
+    background: white;
+    color: black;
+  }
+}
+.contact-btn-secondary {
+  color: black;
+  background: white;
+
+  &:hover {
+    background: $foundation-primary-orange;
+  }
+}
+.join-btn {
+  gap: 26px;
+}

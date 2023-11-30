@@ -1,0 +1,103 @@
+.projects-wrap {
+  margin: 30px 0;
+  // margin-bottom: 60px;
+}
+.projects-inner {
+  gap: 20px;
+  .slick-slide {
+    margin: 0 10px !important;
+  }
+  .slick-list {
+      margin: 0 -10px !important;
+  }
+  // .slick-dots {
+  //   bottom: -10px;
+  // }
+}
+.projects-header {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-left: 56px;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid black;
+    width: 40px;
+    margin: 0 1rem;
+    left: 144px;
+    transform: translate(-70px,13px);
+  }
+}
+.project-heading {
+    width: 52%;
+    padding: 26px 0;
+    padding-left: 60px;
+}
+.projects-cards-wrap {
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  // .slick-dots {
+  //   // bottom: -20;
+  //   // margin: -80px 0 !important;
+  //   // padding-bottom: -80px;
+  // }
+
+  .arrow-right {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    z-index: 1000;
+    top: 50%;
+  }
+  .arrow-left {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+    z-index: 1000;
+    top: 50%;
+  }
+  .arrow-left, .arrow-right {
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
+.projects-cards-wrap .card {
+  border-radius: 20px;
+}
+.projects-cards-wrap .card-inner-box {
+  padding: 50px;
+  gap: 20px;
+}
+.card1 {
+  background: linear-gradient(90deg, rgba(44, 44, 44, 0.5)), url("../../assets/images/image1.jpg");
+  background-position: center;
+}
+.card2 {
+  background: linear-gradient(90deg, rgba(44, 44, 44, 0.5)), url("../../assets/images/image2.jpg");
+  background-position: center;
+
+}
+.card3 {
+  background: linear-gradient(90deg, rgba(44, 44, 44, 0.5)), url("../../assets/images/image3.jpg");
+  background-position: center;
+
+}
+.card-inner-box {
+  h4, p {
+    color: white;
+    font-weight: 900;
+  }
+  .get-started {
+    margin-top: 70px;
+    padding: 16px 34px;
+    background: white;
+    color: black;
+    width: 34%;
+  }
+}

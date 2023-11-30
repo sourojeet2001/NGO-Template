@@ -1,0 +1,72 @@
+
+@use "./variables.scss" as *;
+@use "../modules/typography" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  // overflow-x: hidden;
+}
+header {
+  position: sticky;
+  top: 0;
+  // background: transparent;
+  box-shadow: 0 0 60px 0 rgba(0,0,0,0.1);
+  z-index: 999;
+}
+img {
+  object-fit: cover;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 1280px;
+}
+
+h1, h2, h3, h4,h5 {
+  color: $primary-text-color;
+  font-family: $primary-font-family;
+  font-style: $primary-text-style;
+  font-weight: $basic-font-weight;
+}
+h1 {
+  font-size: 64px;
+  line-height: 76.8px;
+}
+h2 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 40px;
+  line-height: 48px;
+}
+h4 {
+  font-size: 20px;
+  line-height: 32px;
+}
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+p {
+  color: #1D2130;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: $primary-text-style;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.22px;
+}
+a {
+  text-decoration: $anchor-text-decoration;
+  color: #4D5053;
+  text-align: $anchor-text-align;
+  font-family: $anchor-font-family;
+  font-size: $anchor-font-size;
+  font-style: $primary-text-style;
+  font-weight: $anchor-font-weight;
+}
