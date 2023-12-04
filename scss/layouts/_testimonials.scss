@@ -19,6 +19,13 @@
 .testimonials-header {
   margin-top: 40px;
   padding-left: 58px;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 22px;
+    left: 43px;
+  }
 
   &::before {
     display: inline-block;

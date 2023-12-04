@@ -68,6 +68,12 @@ footer {
   }
   ul {
     list-style: none;
+    .flex-wrap {
+      text-align: center;
+      align-items: center;
+      gap: 10px;
+      justify-content: flex-start;
+    }
   }
 }
 .social-icons {
@@ -80,6 +86,10 @@ footer {
     &:hover {
       @include social-icons;
     }
+  }
+  .icons {
+    display: flex;
+    gap: 10px;
   }
 }
 

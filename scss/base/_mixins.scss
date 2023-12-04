@@ -47,19 +47,12 @@
   fill: #cda274;
 }
 
-@mixin articles-hover {
-  transition: 0.5s all ease-in-out;
-  background: #f4f0ec;
-  .other-details svg > circle {
-    fill: white;
-
-    // &:hover {
-    //   @include project-btn()
-    // }
-  }
-}
 
 @mixin nav-slider {
+  // .arrow-left, .arrow-right {
+  //   display: none;
+  //   z-index: -19999;
+  // }
   .menu-btn {
     display: block;
     position: absolute;
@@ -136,7 +129,7 @@
       height: 100vh;
       width: 100%;
       overflow: hidden;
-      background: #CDA274;
+      background: #fff;
       list-style-type: none;
       padding-right: 1rem;
       transform: translateY(-100%);

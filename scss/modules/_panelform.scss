@@ -18,7 +18,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
   }
 }
 #slideout {
-  background: $foundation-primary-orange;
+  background: #fff;
   color: #333;
   position: fixed;
   z-index: 9999;
@@ -38,8 +38,16 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
   .confirmation {
     color: $primary-text-color;
     text-align: center;
-    background: $foundation-primary-orange;
+    // background: $foundation-primary-orange;
   }
+  p{
+    text-align: center;
+    padding: 10px 50px;
+  }
+}
+.name-details {
+    flex-wrap: nowrap;
+    // gap: 20px;
 }
 #slideout form {
   display: block;
@@ -63,7 +71,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
 #slideout form {
   font-family: "roboto", sans-serif;
   width: $width + 60px;
-  margin: 100px auto 0;
+  margin: 50px auto 0;
   // box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   padding: 0 0 40px;
   border-radius: 3px;
@@ -83,7 +91,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
   font: inherit;
   font-size: 0.8em;
   margin: 28px 25px 10px;
-  width: $width;
+  width: 185px;
   display: block;
   border: none;
   padding: 20px 0 10px;
@@ -119,6 +127,7 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, black 4%);
   background-position: -400px 0;
   background-repeat: no-repeat;
+  width: 400px;
   transition: border-bottom 0.3s ease, background 0.3s ease;
   & ~ span.validation-text {
     position: absolute;
@@ -172,6 +181,9 @@ $cubic: cubic-bezier(0.64, 0.09, 0.08, 1);
       color: $invalid;
     }
   }
+}
+#slideout textarea {
+  width: 400px;
 }
 .contact-submit-btn {
   font-family: 'roboto', sans-serif;

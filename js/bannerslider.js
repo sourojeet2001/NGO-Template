@@ -6,9 +6,9 @@ $(document).ready(function () {
     arrows: true,
     dots: !0,
     cssEase: "linear",
-    focusOnSelect: false,
-    fade: true,
-    autoplay: true,
+    // focusOnSelect: false,
+    // fade: true,
+    // autoplay: true,
     prevArrow: '<div class="arrow-left"><i class="fa-solid fa-arrow-left"></i></div>',
     nextArrow: '<div class="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>',
     responsive: [

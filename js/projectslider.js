@@ -1,29 +1,35 @@
 $(document).ready(function () {
   $(".projects-cards-wrap").slick({
-    centerMode: true,
+    centerMode: false,
     centerPadding: '60px',
     dots: false,
     arrows: true,
+    infinite: true,
     prevArrow: '<div class="arrow-left"><i class="fa-solid fa-arrow-left" style="color: #f0f2f4;"></i></div>',
     nextArrow: '<div class="arrow-right"><i class="fa-solid fa-arrow-right" style="color: #f7f7f7;"></i></div>',
     slidesToShow: 3,
+    slidesToScroll: 1,
+    variableWidth: false,
     responsive: [
+      { 
+        breakpoint: 1920, 
+        settings: { 
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
       {
-        breakpoint: 768,
+        breakpoint: 992,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+          slidesToShow: 2,
+          slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 468,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
       }
     ]

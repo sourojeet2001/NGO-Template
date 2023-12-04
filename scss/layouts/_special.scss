@@ -12,6 +12,7 @@
 .special-header {
   margin-bottom: 20px;
   text-transform: uppercase;
+  position: relative;
 
   &::before {
     display: inline-block;
@@ -21,6 +22,12 @@
     margin: 0 1rem;
     left: 144px;
     transform: translate(-70px,13px);
+  }
+
+  img {
+    position: absolute;
+    top: 21px;
+    left: -15px;
   }
 }
 .special-inner-text-box {
