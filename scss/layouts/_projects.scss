@@ -75,17 +75,19 @@
   gap: 20px;
 }
 .card1 {
-  background: linear-gradient(90deg, rgba(44, 44, 44, 0.5)), url("../../assets/images/image1.jpg");
+  background: linear-gradient(90deg, rgba(44, 44, 44, 0.5)), url("../../assets/images/image1.webp");
+  background-repeat: no-repeat;
   background-position: center;
 }
 .card2 {
-  background: linear-gradient(90deg, rgba(44, 44, 44, 0.5)), url("../../assets/images/image2.jpg");
+  background: linear-gradient(90deg, rgba(44, 44, 44, 0.5)), url("../../assets/images/image4.webp");
   background-position: center;
-
+  background-repeat: no-repeat;
 }
 .card3 {
-  background: linear-gradient(90deg, rgba(44, 44, 44, 0.5)), url("../../assets/images/image3.jpg");
+  background: linear-gradient(90deg, rgba(44, 44, 44, 0.5)), url("../../assets/images/image3.webp");
   background-position: center;
+  background-repeat: no-repeat;
 
 }
 .card-inner-box {

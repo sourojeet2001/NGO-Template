@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".projects-cards-wrap").slick({
-    centerMode: false,
+    centerMode: true,
     centerPadding: '60px',
     dots: false,
     arrows: true,
