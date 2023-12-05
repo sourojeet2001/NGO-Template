@@ -7,9 +7,36 @@
     padding: 10px 0;
     justify-content: space-between;
   }
+  .secondary-navbar {
+    padding: 14px 0;
+    display: block;
+    .get-started {
+      width: 18%;
+      padding: 0px 11px;
+      font-size: 12px;
+    }
+    .nav-contact {
+      display: flex;
+
+      img {
+        height: 30px;
+        width: 30px;
+      }
+
+      .nav-contactus {
+        justify-content: flex-start;
+      }
+    }
+    .nav__contact-details {
+      padding-left: 6px;
+      a {
+        font-size: 12px
+      }
+    }
+  }
   @include nav-slider;
   .logo {
-    height: 38px;
+    height: 34px;
     text-align: center;
   }
   .nav-contact {
@@ -20,16 +47,21 @@
       left: 37%;
     }
   }
+  .hero-banner {
+    height: calc(100dvh - 125px);
+  }
   .banner-slider .slick-dots {
-    bottom: 0;
+    bottom: 62 !important;
   }
   .banner-text-box {
     height: 84%;
   }
   .banner-inner-text {
-    width: 54%;
+    h1 {
+      width: 65%;
+    }
     .get-started {
-      width: 68%;
+      width: 52%;
       margin-top: 15px;
     }
     p {
@@ -40,11 +72,11 @@
     flex-wrap: wrap;
   }
   h1 {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 30px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     padding-bottom: 10px;
   }
@@ -86,10 +118,14 @@
   .services--children {
     .container {
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
+  .child-services {
+    margin-left: 14px;
+  }
   .side-image {
-    width: 100%;
+    width: 50%;
 
     img {
       width: 100%;
@@ -130,10 +166,43 @@
     justify-content: center;
     gap: 130px;
   }
+  .blogs-image {
+    height: 250px;
+    width: 250px;
+  }
+  .blog-info {
+    margin: -25px 5px;
+    position: absolute;
+    bottom: -112px;
+    left: 24px;
+    right: 72px;
+
+    a {
+      padding: 8px;
+      font-weight: 600;
+      width: 50%;  
+    }
+  }
+  .blogs-info-inner-box {
+    gap: 10px;
+  }
+  .details {
+    flex-wrap: nowrap;
+  }
+  .blogs-title {
+    line-height: 26px;
+    h4 {
+      font-size: 12px;
+    }
+  }
+  .publication-date {
+    bottom: 35px;
+    right: 77px;
+  }
   .counts {
     .learn-more {
       padding: 12px 16px;
-      width: 78%;
+      width: 58%;
     }
   }
   .project-heading {
@@ -141,6 +210,11 @@
   }
   .clients a{
     padding-bottom: 10px;
+
+    svg {
+      height: 85px;
+      width: 85px;  
+    }
   }
 
 
@@ -157,7 +231,7 @@
     }
   }
   .card {
-    margin-bottom: 65px;
+    margin-bottom: 12px;
   }
   .card-deck {
     // width: 96%;
@@ -172,6 +246,7 @@
     width: 250px;
     justify-content: center;
     margin-bottom: 0;
+    padding: 46px 0px;
     &::before {
       width: 240px;
       margin-bottom: 20px;
@@ -215,7 +290,7 @@
 
   .contactus {
     gap: 14px;
-    padding: 80px 50px;
+    padding: 48px 32px;
     margin: 16px 0;
   }
 
@@ -260,8 +335,12 @@
     width: 50%;
   }
   .newsletter {
-    margin-left: 0;
-    // width: 60%;
+    margin-left: 78px;
+    padding-top: 30px;
+
+    form input {
+      padding: 8px;
+    }
   }
 
   .footer-region {

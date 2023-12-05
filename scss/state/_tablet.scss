@@ -11,9 +11,42 @@
     padding: 10px 0;
     justify-content: space-between;
   }
+  .secondary-navbar {
+    padding: 14px 0;
+    display: block;
+    .get-started {
+      width: 12%;
+      padding: 0px 16px;
+      font-size: 14px;
+    }
+    .nav-contact {
+      display: flex;
+
+      img {
+        height: 30px;
+        width: 30px;
+      }
+
+      .nav-contactus {
+        justify-content: flex-start;
+      }
+    }
+    .nav__contact-details {
+      padding-left: 6px;
+      a {
+        font-size: 12px
+      }
+    }
+  }
+  .banner-text-info {
+    padding-right: 13%;
+    padding-left: 0;
+    margin-right: -8%;
+    margin-top: 70%;
+  }
   @include nav-slider;
   .logo {
-    height: 38px;
+    height: 35px;
     text-align: center;
   }
   .nav-contact {
@@ -26,11 +59,12 @@
   }
   .banner-text-box {
     height: 84%;
+    margin-left: 0;
   }
   .banner-inner-text {
-    width: 54%;
+    width: 84%;
     .get-started {
-      width: 40%;
+      width: 28%;
       margin-top: 20px;
     }
     
@@ -85,11 +119,12 @@
   }
   .services--children {
     .container {
+      justify-content: center;
       flex-wrap: wrap;
     }
   }
   .side-image {
-    width: 100%;
+    width: 50%;
 
     img {
       width: 100%;
@@ -105,7 +140,7 @@
   .counts {
     .learn-more {
       padding: 16px 32px;
-      width: 54%;
+      width: 39%;
     }
   }
   .clients a{
@@ -122,7 +157,7 @@
 
     h2 {
       width: 90%;
-      padding: 42px 17px;
+      padding: 10px 17px;
     }
   }
   .card-deck {
@@ -134,12 +169,16 @@
   .slick-dotted.slick-slider {
     margin-bottom: 0;
   }
+  .card {
+    margin-bottom: 20px;
+  }
   .card-inner {
     width: 500px;
     justify-content: center;
 
     &::before {
       width: 500px;
+      margin-bottom: 10px;
     }
   }
   .card-inner-box {
@@ -195,22 +234,22 @@
   }
   .brand {
     img {
-      height: 25px;
+      height: 40px;
       width: 100px;
     }
   }
   .branding {
-    width: 50%;
+    width: 20%;
   }
   .pages {
-    width: 50%;
+    width: 20%;
     padding-bottom: 20px;
   }
   .footer-services {
-    width: 50%;
+    width: 20%;
   }
   .footer-contact {
-    width: 50%;
+    width: 30%;
   }
   .newsletter {
     margin-left: 0;
@@ -218,8 +257,10 @@
   }
 
   .footer-region {
-    justify-content: center;
     margin-top: 80px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 7px;
     a {
       line-height: 22px;
       font-size: 12px;
@@ -228,14 +269,14 @@
 }
 
 
-@media screen and (max-width: 768px) {
-  @include nav-slider;
+// @media screen and (max-width: 768px) {
+//   @include nav-slider;
 
-  .hero-banner {
-    height: calc(100dvh - 68px);
-  }
-  .footer-region {
-    flex-wrap: nowrap;
-    gap: 10px;
-  }
-}
+//   .hero-banner {
+//     height: calc(100dvh - 68px);
+//   }
+//   .footer-region {
+//     flex-wrap: nowrap;
+//     gap: 10px;
+//   }
+// }

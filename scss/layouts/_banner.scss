@@ -22,7 +22,7 @@
     position: absolute;
     right: 0;
     margin-right: 20px;
-    z-index: 1000;
+    z-index: 10;
     top: 50%;
   }
   .arrow-left {
@@ -30,7 +30,7 @@
     position: absolute;
     left: 0;
     margin-left: 20px;
-    z-index: 1000;
+    z-index: 10;
     top: 50%;
   }
   .arrow-left, .arrow-right {
@@ -60,6 +60,27 @@
   align-items: center;
   flex-direction: row;
   width: 84%;
+}
+.banner-text-info {
+  // width: 19%;
+  // position: sticky;
+  // top: 60%;
+  // padding-left: 12%;
+
+  display: flex;
+  justify-content: flex-start;
+  // height: 40%;
+  // align-items: center;
+  flex-direction: column;
+  // width: 84%;
+  width: 28%;
+  margin-top: 22%;
+  margin-left: 3%;
+  padding: 10%;
+
+  h4 {
+    padding-bottom: 5px;
+  }
 }
 .banner-inner-text {
   line-height: 32px;

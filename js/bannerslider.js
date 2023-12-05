@@ -9,12 +9,30 @@ $(document).ready(function () {
     // focusOnSelect: false,
     // fade: true,
     // autoplay: true,
-    prevArrow: '<div class="arrow-left"><i class="fa-solid fa-arrow-left"></i></div>',
-    nextArrow: '<div class="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>',
+    prevArrow:
+      '<div class="arrow-left"><i class="fa-solid fa-arrow-left"></i></div>',
+    nextArrow:
+      '<div class="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>',
     responsive: [
-      { breakpoint: 1920, settings: { slidesToShow: 1 } },
-      { breakpoint: 992, settings: { slidesToShow: 1} },
-      { breakpoint: 575, settings: { slidesToShow: 1} },
+      { 
+        breakpoint: 1920,
+        settings: { 
+          slidesToShow: 1 
+        } 
+      },
+      { 
+        breakpoint: 992, 
+        settings: { 
+          slidesToShow: 1 
+      } 
+    },
+      { 
+        breakpoint: 575, 
+        settings: { 
+        slidesToShow: 1,
+        arrows: false, 
+      } 
+    },
     ],
   });
 });
