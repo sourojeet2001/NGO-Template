@@ -1,5 +1,17 @@
 @font-face {
-  src: url('../../vendor/Roboto/Roboto-Regular.ttf');
+  src: url('../../vendor/Roboto/Roboto-Bold.ttf');
   font-family: Roboto;
+  font-display: swap;
+}
+
+@font-face {
+  src: url('../../vendor/Roboto/Roboto-Medium.ttf');
+  font-family: Roboto-medium;
+  font-display: swap;
+}
+
+@font-face {
+  src: url('../../vendor/Roboto/Roboto-Light.ttf');
+  font-family: Roboto-light;
   font-display: swap;
 }

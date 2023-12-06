@@ -1,9 +1,0 @@
-@use "../base/base" as *;
-@use "../base/mixins" as *;
-
-// Responsive for Mobile Small.
-@media screen and (max-width: 320px) {
-  .card-inner {
-    width: 230px;
-  }
-}

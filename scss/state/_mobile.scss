@@ -17,6 +17,11 @@
     }
     .nav-contact {
       display: flex;
+      gap: 30px;
+      .get-started {
+        margin-right: -12px;
+        width: 19%;
+      }
 
       img {
         height: 30px;
@@ -30,7 +35,7 @@
     .nav__contact-details {
       padding-left: 6px;
       a {
-        font-size: 12px
+        font-size: 12px;
       }
     }
   }
@@ -56,12 +61,19 @@
   .banner-text-box {
     height: 84%;
   }
+  .banner-text-info {
+    margin-right: 0;
+    margin-top: 72%;
+    width: 18%;
+    padding-right: 0;
+  }
   .banner-inner-text {
+    width: 71%;
     h1 {
-      width: 65%;
+      width: 84%;
     }
     .get-started {
-      width: 52%;
+      width: 63%;
       margin-top: 15px;
     }
     p {
@@ -87,7 +99,7 @@
   h5 {
     font-size: 12px;
   }
-  p{
+  p {
     font-size: 12px;
     line-height: 14px;
   }
@@ -154,8 +166,8 @@
     bottom: -18px;
   }
 
-
-  .count--section1, .count--section2 {
+  .count--section1,
+  .count--section2 {
     flex-wrap: nowrap;
     gap: 100px;
   }
@@ -180,7 +192,7 @@
     a {
       padding: 8px;
       font-weight: 600;
-      width: 50%;  
+      width: 50%;
     }
   }
   .blogs-info-inner-box {
@@ -190,13 +202,13 @@
     flex-wrap: nowrap;
   }
   .blogs-title {
-    line-height: 26px;
+    line-height: 24px;
     h4 {
-      font-size: 12px;
+      font-size: 16px;
     }
   }
   .publication-date {
-    bottom: 35px;
+    bottom: 52px;
     right: 77px;
   }
   .counts {
@@ -208,18 +220,26 @@
   .project-heading {
     width: 100%;
   }
-  .clients a{
+  .clients a {
     padding-bottom: 10px;
 
     svg {
       height: 85px;
-      width: 85px;  
+      width: 85px;
     }
   }
-
+  .client-header h5 span {
+    width: 52%;
+  }
 
   .testimonials-wrap {
     margin: 72px 0;
+  }
+  .testimonial {
+    p {
+      font-size: 12px;
+      padding-top: 10px;
+    }
   }
   .testimonials-inner {
     padding: 26px 24px;
@@ -261,9 +281,16 @@
   .person {
     gap: 5px;
     border-right: none;
+    width: 35%;
     img {
       height: 56px;
       width: 56px;
+    }
+  }
+  .personal-details {
+    h4,
+    p {
+      font-size: 12px;
     }
   }
 
@@ -310,6 +337,16 @@
       width: 50px;
     }
   }
+  .events-header h2 span {
+    width: 46%;
+  }
+  .events-inner-box {
+    h5 {
+      &::after {
+        transform: translate(54px,-17px);
+      }
+    }
+  }
 
   .social-icons {
     padding-top: 10px;
@@ -338,6 +375,10 @@
     margin-left: 78px;
     padding-top: 30px;
 
+    &::before {
+      transform: translate(60px,30px);
+    }
+
     form input {
       padding: 8px;
     }
@@ -349,6 +390,77 @@
     a {
       line-height: 22px;
       font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .secondary-navbar {
+    .nav-contact {
+      gap: 22px;
+    }
+    .get-started {
+      width: 22%;
+      padding: 0 12px;
+    }
+  }
+  .banner-inner-text {
+    width: 70%;
+    .get-started {
+      padding: 8px 5px;
+      width: 60%;
+    }
+  }
+  // .banner-text-info {
+  //   margin-top: 72%;
+  //   width: 13%;
+  //   padding-right: 0;
+  //   margin-left: -10px;
+  //   margin-right: 0;
+  // }
+  .counts .learn-more {
+    width: 63%;
+  }
+
+  @for $i from 1 through 11 {
+    .pointer#{$i} {
+      svg {
+        height: 15px;
+      }
+    }
+  }
+  .count-inner-box {
+    svg {
+      height: 25px;
+      top: -8px;
+      left: -12px;
+    }
+    h5 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .blogs-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .publication-date {
+    bottom: 24px;
+  }
+  .card-inner {
+    width: 238px;
+    box-shadow: -2px 1px 12px #e3e1e1;
+
+    &::before {
+      width: 210px;
+      left: -8px;
+    }
+  }
+  .newsletter {
+    margin-left: 55px;
+
+    input[type="email"] {
+      width: 120px;
     }
   }
 }

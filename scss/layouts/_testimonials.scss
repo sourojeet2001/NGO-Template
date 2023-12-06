@@ -15,6 +15,28 @@
     padding-bottom: 100px;
     margin-left: 38px;
   }
+  .arrow-right-testimonial {
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    margin-right: 10px;
+    z-index: 1000;
+    top: 50%;
+  }
+  .arrow-left-testimonial {
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    margin-left: 10px;
+    z-index: 1000;
+    top: 50%;
+  }
+  .arrow-left-testimonial, .arrow-right-testimonial {
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
 }
 .testimonials-header {
   margin-top: 40px;
@@ -23,8 +45,8 @@
 
   img {
     position: absolute;
-    top: 22px;
-    left: 43px;
+    top: 23px;
+    left: 30px;
   }
 
   &::before {
@@ -34,7 +56,7 @@
     width: 40px;
     margin: 0 1rem;
     left: 144px;
-    transform: translate(-70px,13px);
+    transform: translate(-84px,14px);
   }
 }
 
@@ -60,7 +82,7 @@
 .card-inner {
   position: relative;
   display: flex;
-  padding: 54px 30px;
+  padding: 54px 24px;
   align-items: center;
   margin: 28px;
   flex-wrap: nowrap;
@@ -107,9 +129,17 @@
   p {
     font-size: 16px;
   }
+  h4 {
+    font-size: 28px;
+  }
 }
 .testimonial {
   width: 80%;
   // border-left: 1px solid rgb(166, 166, 166);
   // padding-left: 20px;
+
+  p {
+    font-size: 14px;
+    padding-left: 20px;
+  }
 }

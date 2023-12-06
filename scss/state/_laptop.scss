@@ -79,11 +79,12 @@
   }
 
   .banner-text-info {
-    top: 63%;
-    padding-right: 18%;
-    padding-left: 0;
-    margin-right: 18%;
-    width: 26%;
+      padding-right: 15%;
+      padding-left: 2px;
+      margin-right: 3%;
+      width: 26%;
+      margin-top: 18%;
+      margin-left: -8%;
   }
   .get-started {
     width: 33%;
@@ -97,7 +98,7 @@
     .get-started {
       margin-top: 26px;
       padding: 8px 10px;
-      width: 26%;
+      width: 28%;
     }
     h1 {
       width: 64%;
@@ -114,6 +115,16 @@
 
   .testimonials-wrap {
     background-position: unset;
+  }
+  .testimonials {
+    p {
+      font-size: 12px;
+    }
+  }
+  .personal-details {
+    h4 {
+      font-size: 16px;
+    }
   }
   .card-inner {
     padding: 70px 38px;

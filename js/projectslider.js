@@ -9,7 +9,8 @@ $(document).ready(function () {
     nextArrow: '<div class="arrow-right"><i class="fa-solid fa-arrow-right" style="color: #f7f7f7;"></i></div>',
     slidesToShow: 3,
     slidesToScroll: 1,
-    variableWidth: false,
+    // adaptiveHeight: true,
+    // variableWidth: false,
     responsive: [
       { 
         breakpoint: 1920, 

@@ -11,10 +11,10 @@
   text-decoration: $anchor-text-decoration;
   color: #fff;
   text-align: $center-alignment;
-  font-family: Jost;
-  font-size: 18px;
+  font-family: Roboto;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.36px;
   display: flex;
   align-items: $center-alignment;
@@ -37,17 +37,28 @@
 }
 
 .btn-default {
-  color: white;
-  background: $foundation-primary-orange;
-  position: sticky;
+  color: #fff;
+  background: #f05e28;
+  position: fixed;
   top: 50%;
-  bottom: -150px;
+  // bottom: -150px;
   padding: 8px 16px;
   border-radius: 4px;
-  transform: rotate(90deg);
-  margin-left: -36px;
-  border-color: $foundation-primary-orange;
-  outline: none;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(-90deg);
+  margin-right: -35px;
+  border-color: #f05e28;
+  outline: 0;
   border: none;
-  z-index: 10000;
+  // z-index: 10000;
+  // left: 100%;
+  right: 0;
+  // transition: 0.7s all  ;
+  animation: fadeIn 0.9s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

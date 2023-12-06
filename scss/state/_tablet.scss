@@ -39,10 +39,11 @@
     }
   }
   .banner-text-info {
-    padding-right: 13%;
+    padding-right: 6%;
     padding-left: 0;
-    margin-right: -8%;
-    margin-top: 70%;
+    margin-right: -12%;
+    margin-top: 37%;
+    margin-left: -75px;
   }
   @include nav-slider;
   .logo {
@@ -62,7 +63,7 @@
     margin-left: 0;
   }
   .banner-inner-text {
-    width: 84%;
+    width: 75%;
     .get-started {
       width: 28%;
       margin-top: 20px;
@@ -146,10 +147,36 @@
   .clients a{
     padding-bottom: 10px;
   }
+  .client-header {
+    h5 {
+      span {
+        width: 32%;
+      }
+    }
+  }
 
 
   .testimonials-wrap {
     margin: 72px 0;
+  }
+  .testimonials-inner {
+    .arrow-left-testimonial {
+      left: -50px;
+    }
+    .arrow-right-testimonial {
+      right: -50px;
+    }
+  }
+
+  .testimonials {
+    p {
+      font-size: 12px;
+    }
+  }
+  .personal-details {
+    h4 {
+      font-size: 16px;
+    }
   }
   .testimonials-inner {
     padding: 26px 24px;
@@ -175,6 +202,7 @@
   .card-inner {
     width: 500px;
     justify-content: center;
+    padding: 50px 38px;
 
     &::before {
       width: 500px;
@@ -228,6 +256,9 @@
     gap: 40px;
   }
 
+  .events-header h2 span {
+    width: 34%;
+  }
   .social-icons {
     padding-top: 10px;
     width: 70%;
@@ -264,6 +295,16 @@
     a {
       line-height: 22px;
       font-size: 12px;
+    }
+  }
+
+  #slideout {
+    width: 420px;
+    form {
+      width: 360px;
+    }
+    input[type="email"], textarea {
+      width: 85%;
     }
   }
 }

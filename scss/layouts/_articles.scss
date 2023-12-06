@@ -8,8 +8,8 @@
 
   img {
     position: absolute;
-    top: 22px;
-    left: 43px;
+    top: 23px;
+    left: 30px;
   }
 
   &::before {
@@ -19,7 +19,7 @@
     width: 40px;
     margin: 0 1rem;
     left: 144px;
-    transform: translate(-70px,13px);
+    transform: translate(-84px,14px);
   }
 
   h2 {
@@ -118,8 +118,10 @@
   padding: 8px;
 }
 .blogs-title {
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 30px;
   letter-spacing: 0.5px;
+  padding-bottom: 10px;
 }
 .publication-date {
   font-size: 16px;

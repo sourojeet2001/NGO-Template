@@ -2,145 +2,160 @@
 @use "../base/mixins" as *;
 
 // Responsive Desktop. 
-@media screen and (max-width: 1600px) {
-  .container {
-    max-width: 1140px;
-  }
-  .primary-navbar {
-    gap: 60px;
-  }
-  .primary-menu {
-    gap: 64px;
-  }
-  .menu-item-list a {
-    padding: 16px;
-    font-size: 14px;
-  }
-  .logo {
-    height: 36px;
-    width: 86px;
-  }
-  .nav-contact {
-    gap: 60px;
-  }
-  .nav__contact-details {
-    width: 160px;
-    a {
-      text-align: left;
-      // font-size: 10px;
-    }
-  }
-  .flex-wrap {
-    flex-wrap: nowrap;
-  }
-  h1 {
-    font-size: 34px;
-    line-height: 40px;
-  }
-  h2 {
-    font-size: 38px;
-    line-height: 42px;
-  }
-  h4 {
-    font-size: 16px;
-    line-height: 18px;
-  }
-  h5 {
-    font-size: 14px;
-  }
-  p{
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .counts {
-    width: 62%;
-    .learn-more {
-      width: 64%;
-    }
-  }
-  .hero-banner {
-    height: calc(100dvh - 124px);
-  }
-  .get-started {
-    width: 33%;
-    font-size: 14px;
-    font-size: 16px;
-  }
-  .banner-inner-text {
-    .get-started {
-      margin-top: 26px;
-    }
-  }
-  .services-inner-item-box p {
-    padding-bottom: 36px;
-  }
+// @media screen and (max-width: 1600px) {
+//   .container {
+//     max-width: 1140px;
+//   }
+//   .primary-navbar {
+//     gap: 60px;
+//   }
+//   .primary-menu {
+//     gap: 64px;
+//   }
+//   .menu-item-list a {
+//     padding: 16px;
+//     font-size: 14px;
+//   }
+//   .logo {
+//     height: 36px;
+//     width: 86px;
+//   }
+//   .nav-contact {
+//     gap: 60px;
+//   }
+//   .nav__contact-details {
+//     width: 160px;
+//     a {
+//       text-align: left;
+//       // font-size: 10px;
+//     }
+//   }
+//   .flex-wrap {
+//     flex-wrap: nowrap;
+//   }
+//   h1 {
+//     font-size: 34px;
+//     line-height: 40px;
+//   }
+//   h2 {
+//     font-size: 38px;
+//     line-height: 42px;
+//   }
+//   h4 {
+//     font-size: 16px;
+//     line-height: 18px;
+//   }
+//   h5 {
+//     font-size: 14px;
+//   }
+//   p{
+//     font-size: 12px;
+//     line-height: 16px;
+//   }
+//   .counts {
+//     width: 62%;
+//     .learn-more {
+//       width: 64%;
+//     }
+//   }
+//   .hero-banner {
+//     height: calc(100dvh - 124px);
+//   }
+//   .get-started {
+//     width: 33%;
+//     font-size: 14px;
+//     font-size: 16px;
+//   }
+//   .banner-inner-text {
+//     .get-started {
+//       margin-top: 26px;
+//     }
+//   }
+//   .services-inner-item-box p {
+//     padding-bottom: 36px;
+//   }
 
-  .contact  .get-started {
-    width: 80%;
-    padding: 24px 16px;
-  }
+//   .contact  .get-started {
+//     width: 80%;
+//     padding: 24px 16px;
+//   }
 
-  .testimonials-wrap {
-    background-position: unset;
-  }
-  .card-inner {
-    padding: 70px 38px;
-    width: 730px;
-  }
-  .card-inner-box {
-    .get-started {
-      width: 36%;
-      padding: 14px 24px;
-    }
-  }
-  .events-box {
-    padding: 46px 62px;
-  }
-  .person {
-    gap: 5px;
-    img {
-      height: 64px;
-      width: 64px;
-    }
-  }
-  .projects-header {
-    margin-bottom: 0;
-  }
-  .project-heading {
-    padding: 40px 0;
-  }
-  .other-details {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    gap: 50px;
-  }
+//   .testimonials-wrap {
+//     background-position: unset;
+//   }
+//   .card-inner {
+//     padding: 70px 38px;
+//     width: 730px;
+//   }
+//   .card-inner-box {
+//     .get-started {
+//       width: 36%;
+//       padding: 14px 24px;
+//     }
+//   }
+//   .testimonials {
+//     p {
+//       font-size: 12px;
+//     }
+//   }
+//   .personal-details {
+//     h4 {
+//       font-size: 16px;
+//     }
+//   }
+//   .events-box {
+//     padding: 46px 62px;
+//   }
+//   .person {
+//     gap: 5px;
+//     img {
+//       height: 64px;
+//       width: 64px;
+//     }
+//   }
+//   .projects-header {
+//     margin-bottom: 0;
+//   }
+//   .project-heading {
+//     padding: 40px 0;
+//   }
+//   .other-details {
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//     gap: 50px;
+//   }
 
-  .contactus {
-    gap: 28px;
-    padding: 80px 222px;
-    margin: 36px 0;
-  }
+//   .contactus {
+//     gap: 28px;
+//     padding: 80px 222px;
+//     margin: 36px 0;
+//   }
 
-  .social-icons {
-    padding-top: 16px;
-  }
-  .footer-region {
-    gap: 76px;
-    a {
-      line-height: 50px;
-      font-size: 18px;
-    }
-  }
-}
+//   .social-icons {
+//     padding-top: 16px;
+//   }
+//   .footer-region {
+//     gap: 76px;
+//     a {
+//       line-height: 50px;
+//       font-size: 18px;
+//     }
+//   }
+// }
 
 @media screen and (min-width: 1400px) {
+  .testimonials {
+    p {
+      font-size: 12px;
+    }
+  }
   .card-inner-box {
     .get-started {
-      width: 44%;
+      width: 51%;
     }
   }
   .banner-text-info {
-    margin-top: 20%;
+    margin-top: 18%;
     margin-left: 0;
   }
 }

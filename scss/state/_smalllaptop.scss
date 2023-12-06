@@ -89,14 +89,17 @@
     .get-started {
       margin-top: 26px;
       padding: 8px 10px;
-      width: 26%;
+      width: 28%;
     }
     h1 {
       width: 64%;
     }
   }
-  .services-inner-item-box p {
-    padding-bottom: 36px;
+  .services-inner-item-box {
+    padding: 28px 58px;
+    // p {
+    //   padding-bottom: 36px;
+    // }
   }
 
   .special {
@@ -108,6 +111,13 @@
       height: 100%;
     }
   }
+  .client-header {
+    h5 {
+      span {
+        width: 16%;
+      }
+    }
+  }
 
   .contact  .get-started {
     width: 80%;
@@ -116,6 +126,25 @@
 
   .testimonials-wrap {
     background-position: unset;
+    margin-bottom: 30px;
+  }
+  .testimonials {
+    p {
+      font-size: 12px;
+    }
+  }
+  .testimonials-inner {
+    .arrow-left-testimonial {
+      left: 0px;
+    }
+    .arrow-right-testimonial {
+      right: 0px;
+    }
+  }
+  .personal-details {
+    h4 {
+      font-size: 16px;
+    }
   }
   .card-inner {
     padding: 70px 38px;
@@ -123,7 +152,7 @@
   }
   .card-inner-box {
     .get-started {
-      width: 64%;
+      width: 56%;
       padding: 12px 16px;
     }
   }
@@ -139,6 +168,11 @@
   }
   .projects-header {
     margin-bottom: 0;
+  }
+  .projects-cards-wrap {
+    .card-inner-box {
+      padding: 36px;
+    }
   }
   .project-heading {
     padding: 40px 0;

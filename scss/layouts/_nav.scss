@@ -7,6 +7,14 @@
   flex-wrap: nowrap;
   gap: 120px;
   justify-content: flex-start;
+
+  .get-started {
+    background: #1D2130;
+
+    &:hover {
+      color: white;
+    }
+  }
 }
 .secondary-navbar {
   display: none;
@@ -43,7 +51,7 @@
 .menu-item-list {
   list-style: none;
   a {
-    padding: 10px;
+    padding: 10px 16px;
 
     &:hover {
     @include link-hover
@@ -100,17 +108,6 @@
       }
     }
   }
-  // ul li ul {
-  //   background: orange;
-  //   visibility: hidden;
-  //   opacity: 0;
-  //   min-width: 5rem;
-  //   position: absolute;
-  //   transition: all 0.5s ease;
-  //   margin-top: 1rem;
-  //   left: 0;
-  //   display: none;
-  // }
   
   ul li:hover > ul,
   ul li ul:hover {
@@ -118,9 +115,4 @@
     opacity: 1;
     display: block;
   }
-  
-  // ul li ul li {
-  //   clear: both;
-  //   width: 100%;
-  // }
 }

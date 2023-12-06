@@ -14,6 +14,22 @@
       type="font/ttf"
     />
     <link
+      href="./vendor/Roboto/Roboto-Medium.ttf"
+      rel="preload"
+      as="font"
+      onload="this.onload=null;this.rel='stylesheet'"
+      crossorigin="anonymous"
+      type="font/ttf"
+    />
+    <link
+      href="./vendor/Roboto/Roboto-Light.ttf"
+      rel="preload"
+      as="font"
+      onload="this.onload=null;this.rel='stylesheet'"
+      crossorigin="anonymous"
+      type="font/ttf"
+    />
+    <link
       href="./dist/css/critical.min.css"
       rel="preload"
       as="style"
@@ -43,26 +59,21 @@
       rel="stylesheet"
       media="screen and (max-width: 992px)"
     />
-    <!-- <link
-  rel="stylesheet"
-  href="./dist/css/foldablehorizontal.min.css"
-  media="screen and (max-width: 720px)"
-/> -->
+    <link
+      rel="stylesheet"
+      href="./dist/css/foldablehorizontal.min.css"
+      media="screen and (max-width: 720px)"
+    />
     <link
       href="./dist/css/mobile.min.css"
       rel="stylesheet"
       media="screen and (max-width: 462px)"
+    />  
+    <link
+      rel="stylesheet"
+      href="./dist/css/foldablevertical.min.css"
+      media="screen and (max-width: 280px)"
     />
-    <!-- <link
-  rel="stylesheet"
-  href="./dist/css/mobilesmall.min.css"
-  media="screen and (max-width: 320px)"
-/> -->
-    <!-- <link
-  rel="stylesheet"
-  href="./dist/css/foldablevertical.min.css"
-  media="screen and (max-width: 280px)"
-/> -->
   </head>
   <nav>
     <!-- Header Start. -->
@@ -143,6 +154,7 @@
     </header>
     <!-- Header End. -->
   </nav>
+  
   <body>
     <main>
       <!-- Banner Slider Start. -->
@@ -177,80 +189,7 @@
         </div>
       </div>
       <!-- Banner Slider End. -->
-      <aside>
-        <!-- Panel Contact Us Form. -->
-        <button class="btn btn-default" type="button">Contact Us</button>
-        <div id="slideout">
-          <div class="panelform">
-            <h2>Join as a volunteer</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
-              laborum magni vel harum nobis deserunt?
-            </p>
-            <!-- <img src="./assets/images/close.webp" alt="" class="close" height="30" width="30"> -->
-            <svg
-              fill="none"
-              height="33"
-              viewBox="0 0 32 33"
-              width="32"
-              xmlns="http://www.w3.org/2000/svg"
-              class="close"
-            >
-              <rect fill="#1D2130" height="32" width="32" rx="4" y="0.5" />
-              <path
-                d="M10 22.5L22 10.5M10 10.5L22 22.5"
-                stroke="white"
-                stroke-width="1.5"
-              />
-            </svg>
-            <label for="contactus">Contact Us</label>
-            <form id="contactus" class="contactus-form">
-              <div class="flex-wrap name-details">
-                <div class="fname">
-                  <label for="fname">First Name</label>
-                  <input
-                    type="text"
-                    id="fname"
-                    placeholder="First Name"
-                    required
-                  />
-                </div>
-                <div class="lname">
-                  <label for="lname">Last Name</label>
-                  <input
-                    type="text"
-                    id="lname"
-                    placeholder="Last Name"
-                    required
-                  />
-                </div>
-              </div>
-              <label for="email">Email Address</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Email address"
-                required
-                onblur="this.setAttribute('value', this.value);"
-              />
-              <span class="validation-text"
-                >Please enter a valid email address.</span
-              >
-              <label for="message">Meassage</label>
-              <textarea
-                id="message"
-                placeholder="Type your Message"
-                required
-                rows="1"
-              ></textarea
-              ><!-- <input type="submit" value="Submit" class="contact-submit-btn"> -->
-              <button class="contact-submit-btn">Send</button>
-            </form>
-          </div>
-          <h2 class="confirmation">Thank you! We'll get back to you soon!</h2>
-        </div>
-        <!-- Panel Contact Us Form End. -->
-      </aside>
+
       <div class="container">
         <!-- Services Section Start. -->
         <section class="services">
@@ -389,7 +328,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-                <h4>Food</h4>
+                <h4>Education</h4>
                 <p>
                   There are many variations of the passages of lorem Ipsum from
                   available, majority.
@@ -437,7 +376,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-                <h4>Education</h4>
+                <h4>Pure Water</h4>
                 <p>
                   There are many variations of the passages of lorem Ipsum from
                   available, majority.
@@ -1334,9 +1273,11 @@
             </div>
           </div>
         </section>
-        <!-- Special Need Section End. --><!-- Clients Section Start. -->
+        <!-- Special Need Section End. -->
+        
+        <!-- Supporter Section Start. -->
         <section class="clients-wrap">
-          <div class="client-header"><h5>Our Supporters</h5></div>
+          <div class="client-header"><h5><span>Our Supporters</span></h5></div>
           <div class="flex-wrap clients">
             <a href="#" title="supporter1"
               ><svg
@@ -1606,12 +1547,13 @@
             ></a>
           </div>
         </section>
-        <!-- Clients Section End. -->
+        <!-- Supporter Section End. -->
       </div>
       <!-- Projects Section Start. -->
       <section class="projects-wrap">
         <div class="container">
-          <div class="projects-header"><h5>Projects we have done</h5></div>
+          <div class="projects-header">
+            <h5>Projects we have done</h5></div>
           <h2 class="project-heading">
             Learn the stories of those we've already helped
           </h2>
@@ -1861,6 +1803,7 @@
         </div>
       </section>
       <!-- Services Children Section End. -->
+
       <div class="container">
         <!-- Blog Section Start. -->
         <section class="flex-column blogs-wrap flex-wrap">
@@ -2115,7 +2058,9 @@
             </div>
           </div>
         </section>
-        <!-- Blog Section End. --><!-- Testimonial Section Start. -->
+        <!-- Blog Section End. -->
+        
+        <!-- Testimonial Section Start. -->
         <section class="testimonials-wrap">
           <div class="testimonials-header">
             <h5>Testimonials</h5>
@@ -2255,7 +2200,9 @@
             </div>
           </div>
         </section>
-        <!-- Testimonial Section End. --><!-- Contact Us Section Start. -->
+        <!-- Testimonial Section End. -->
+        
+        <!-- Contact Us Section Start. -->
         <section class="flex-column contactus flex-center">
           <div class="contact-header">
             <h2>
@@ -2269,9 +2216,13 @@
             ><a href="#" class="flex-center contact-btn-secondary">Donate</a>
           </div>
         </section>
-        <!-- Contact Us Section Start. --><!-- Events Section Start. -->
+        <!-- Contact Us Section Start. -->
+        
+        <!-- Events Section Start. -->
         <section class="flex-column events-wrap">
-          <div class="events-header"><h2>Our Events</h2></div>
+          <div class="events-header">
+            <h2><span>Our Events</span></h2>
+          </div>
           <div class="flex-wrap our-events">
             <div class="flex-wrap events-box">
               <div class="flex-column events-inner-box">
@@ -2437,7 +2388,8 @@
                 id="email_id"
                 placeholder="Your email"
                 name="email_id"
-              /><br /><input type="submit" value="Submit" />
+              /><br />
+              <input type="submit" value="Submit" class="submit-btn" />
             </form>
           </div>
           <!-- Newsletter end. -->
@@ -2445,29 +2397,106 @@
       </div>
     </footer>
     <!-- Footer Region End. --><!-- Js Scripts. -->
-    <script src="./vendor/jquery.min.js"></script>
-    <script src="./vendor/slick/slick.min.js"></script>
-    <script src="./vendor/counterUp/jquery.counterup.min.js"></script>
-    <script src="./vendor/all.min.js" async></script>
+    <script src="./vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="./vendor/slick/slick.min.js" type="text/javascript"></script>
+    <script src="./vendor/counterUp/jquery.counterup.min.js" type="text/javascript"></script>
+    <script src="./vendor/all.min.js" async type="text/javascript"></script>
     <script
       src="./vendor/counterUp/noframework.waypoints.min.js"
       async
+      type="text/javascript"
     ></script>
     <script
       src="./dist/js/counterUp/jquery.waypoints.min.js"
       async
       type="text/javascript"
     ></script>
-    <script src="./dist/js/aos/aos.min.js"></script>
-    <script src="./dist/js/slider.min.js"></script>
-    <script src="./dist/js/bannerslider.min.js"></script>
-    <script src="./dist/js/projectslider.min.js"></script>
-    <script src="./dist/js/counter.min.js" async></script>
-    <script src="./dist/js/menu.min.js"></script>
+    <script src="./dist/js/aos/aos.min.js" type="text/javascript"></script>
+    <script src="./dist/js/slider.min.js" type="text/javascript"></script>
+    <script src="./dist/js/bannerslider.min.js" type="text/javascript"></script>
+    <script src="./dist/js/projectslider.min.js" type="text/javascript"></script>
+    <script src="./dist/js/counter.min.js" async type="text/javascript"></script>
+    <script src="./dist/js/menu.min.js" type="text/javascript"></script>
     <script src="./dist/js/panneltoggler.min.js" type="module"></script>
-    <script src="./dist/js/maphover.min.js"></script>
+    <script src="./dist/js/global.min.js" type="text/javascript"></script>
+    <!-- <script src="./dist/js/maphover.min.js" type="text/javascript"></script> -->
     <script>
       AOS.init();
+      <!-- AOS.refresh(); -->
     </script>
   </body>
+  <aside>
+    <!-- Panel Contact Us Form. -->
+    <button class="btn btn-default" type="button">Contact Us</button>
+    <div id="slideout">
+      <div class="panelform">
+        <h2>Join as a volunteer</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
+          laborum magni vel harum nobis deserunt?
+        </p>
+        <!-- <img src="./assets/images/close.webp" alt="" class="close" height="30" width="30"> -->
+        <svg
+          fill="none"
+          height="33"
+          viewBox="0 0 32 33"
+          width="32"
+          xmlns="http://www.w3.org/2000/svg"
+          class="close"
+        >
+          <rect fill="#1D2130" height="32" width="32" rx="4" y="0.5" />
+          <path
+            d="M10 22.5L22 10.5M10 10.5L22 22.5"
+            stroke="white"
+            stroke-width="1.5"
+          />
+        </svg>
+        <label for="contactus">Contact Us</label>
+        <form id="contactus" class="contactus-form">
+          <div class="flex-wrap name-details">
+            <div class="fname">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="lname">
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+          </div>
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email address"
+            required
+            onblur="this.setAttribute('value', this.value);"
+          />
+          <span class="validation-text"
+            >Please enter a valid email address.</span
+          >
+          <label for="message">Meassage</label>
+          <textarea
+            id="message"
+            placeholder="Type your Message"
+            required
+            rows="1"
+          ></textarea
+          ><!-- <input type="submit" value="Submit" class="contact-submit-btn"> -->
+          <button class="contact-submit-btn">Send</button>
+        </form>
+      </div>
+      <h2 class="confirmation">Thank you! We'll get back to you soon!</h2>
+    </div>
+    <!-- Panel Contact Us Form End. -->
+  </aside>
 </html>
