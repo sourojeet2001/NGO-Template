@@ -1,3 +1,8 @@
+.our-events {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 24px;
+}
 .events-header {
   // h2::after {
   //   display: inline-block;
@@ -16,30 +21,42 @@
   
     span {
       width: 27%;
-      // z-index: 100;
+      letter-spacing: 2px;
+      font-family: 'Roboto-medium';
+      font-weight: 500;
     }
   
     &:after {
         display: inline-block;
         content: "";
-        border-top: 0.5px solid black;
+        border-top: 0.5px solid #E5E5E5;
         width: 100%;
     }
   }
 }
 .events-box {
   position: relative;
-  padding: 64px 75px;
-  background: #d6d4d4;
+  padding: 46px 52px;
+  background: #E8E9EA;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
-  gap: 30px;
+  // gap: 30px;
+  padding-right: 24px;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .events-inner-box {
-  padding-left: 20px;
+  padding-left: 58px;
   h5 {
+    font-weight: 500;
+    font-family: 'Roboto-medium';
+    letter-spacing: 2px;
+    line-height: normal;
+    font-style: normal;
+    text-transform: uppercase;
+
     &::after {
       display: inline-block;
       content: "";
@@ -49,22 +66,42 @@
       left: 144px;
       transform: translate(-8px,-4px);
     }
+
+  }
+  h3 {
+    width: 75%;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    padding-top: 12px;
   }
 }
 .event-date {
-    line-height: 24px;
-    letter-spacing: 0.16px;
+    display: grid;
+    line-height: normal;
+    letter-spacing: 2px;
     text-transform: capitalize;
     position: absolute;
     color: rgb(26, 25, 25);
-    background: rgb(138, 137, 137);
+    background: #B9BABF;
     left: 0;
     top: 0;
-    padding: 14px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    width: 80px;
+    padding: 20px;
+    // border-top-right-radius: 10px;
+    border-bottom-right-radius: 30px;
+    // width: 80px;
     text-align: center;
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Roboto-medium;
+
+    span {
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 58px;
+      font-variant: small-caps;
+      font-family: Roboto-medium;
+    }
 }

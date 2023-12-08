@@ -3,14 +3,22 @@
 
 footer {
   background: black;
-  // background: linear-gradient(90deg, rgba(44, 44, 44, 0.5)), url("../../assets/images/footer.png");
-
-  // &::before {
-  //   content: "";
-  //   background: url("../../assets/images/footer.png");
-  //   filter: invert(1);
-  //   z-index: 1000;
-  // }
+  position: relative;
+  .container {
+    z-index: 100;
+    position: relative;
+  }
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  filter: saturate(0) brightness(1);
+  opacity: 0.2;
 }
 .footer-region {
   gap: 80px;
@@ -22,6 +30,9 @@ footer {
   h4 {
     text-align: left;
     color: white;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto-medium';
   }
 }
 .footer-nav {
@@ -47,6 +58,9 @@ footer {
     letter-spacing: 0.22px;
     text-align: left;
     color: white;
+    opacity: 0.7;
+    font-size: 14px;
+    font-weight: 400;
 
     &:hover {
       @include link-hover;
@@ -80,9 +94,10 @@ footer {
   width: 50%;
   padding-top: 12px;
   color: white;
-  gap: 10px;
+  gap: 0;
 
   a {
+    // opacity: 0.5;
     &:hover {
       @include social-icons;
     }
@@ -90,6 +105,10 @@ footer {
   .icons {
     display: flex;
     gap: 10px;
+
+    svg {
+      font-size: 18px;
+    }
   }
 }
 
@@ -100,14 +119,26 @@ footer {
   margin-left: 50px;
   margin-top: -24px;
 
+  h4 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Roboto-medium';
+  }
+
+  h3 {
+    font-size: 28px;
+    color: #fff;
+  }
+
   &::before {
     display: inline-block;
     content: "";
-    border-top: 1px solid white;
-    width: 40px;
+    border-top: 2px solid #fff;
+    width: 52px;
     margin: 0 1rem;
     left: 144px;
-    transform: translate(88px,38px);
+    transform: translate(116px,38px);
   }
   label {
     display: none;
@@ -117,7 +148,7 @@ footer {
     // gap: 10px;
 
     input {
-      padding: 20px;
+      padding: 20px 40px;
       border-right: none;
       background: black;
       border: 1px solid #EBF0F94D;
@@ -125,6 +156,12 @@ footer {
       border-right: none;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
+      color: white;
+      outline: 0;
+
+      &:focus {
+        outline: 0;
+      }
     }
     .submit-btn {
       background: #fff;
@@ -132,6 +169,10 @@ footer {
       border-radius: 4px;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+      color: black;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Roboto-medium';
     }
 
   }

@@ -24,3 +24,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
   handleScroll();
 });
+
+
+$(document).ready(function () {
+  function updateBackgroundImage(element) {
+    let img = document.querySelector(element);
+    let style = img.currentStyle || window.getComputedStyle(img, false);
+    let bi = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+
+    var url = new URL(bi);
+    var pathname = url.pathname;
+    var parts = pathname.split('/');
+    var assetsIndex = parts.indexOf('assets');
+    var result = parts.slice(assetsIndex + 1).join('/');
+    var imgUrl = "../../assets/" + result;
+    console.log("url(" + imgUrl + ")");
+    document.querySelector("nav").style.backgroundImage = "url(" + imgUrl + ")";
+    document.querySelector("nav").style.backgroundSize = "cover";
+  }
+  updateBackgroundImage(".hero-banner");
+
+  $('.slick-slider').on('afterChange', function (event, slick, currentSlide) {
+    var dataId = $('.slick-current').attr("data-slick-index");
+    if(dataId != 0) {
+      updateBackgroundImage(".hero-banner"+dataId);
+    }
+    else {
+      updateBackgroundImage(".hero-banner");
+    }   
+  });
+});

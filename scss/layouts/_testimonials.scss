@@ -52,11 +52,16 @@
   &::before {
     display: inline-block;
     content: "";
-    border-top: 1px solid black;
-    width: 40px;
+    border-top: 2px solid black;
+    width: 50px;
     margin: 0 1rem;
     left: 144px;
-    transform: translate(-84px,14px);
+    transform: translate(-86px,15px);
+  }
+
+  h5 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 }
 
@@ -98,7 +103,7 @@
   &::before {
     content: "";
     display: block;
-    border: 0.7px solid #F5936F;
+    border: 1px solid #F5936F;
     width: 750px;
     position: absolute;
     z-index: -10;
@@ -128,6 +133,9 @@
 .personal-details {
   p {
     font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Roboto-medium';
+    padding-top: 5px;
   }
   h4 {
     font-size: 28px;

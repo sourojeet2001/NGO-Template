@@ -15,11 +15,16 @@
   &::before {
     display: inline-block;
     content: "";
-    border-top: 1px solid black;
-    width: 40px;
+    border-top: 2px solid black;
+    width: 50px;
     margin: 0 1rem;
     left: 144px;
-    transform: translate(-84px,14px);
+    transform: translate(-86px,15px);
+  }
+
+  h5 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 
   h2 {
@@ -40,16 +45,17 @@
 }
 
 .blogs-box {
-  gap: 28px;
+  // gap: 82px;
   margin-bottom: 32px;
+  justify-content: flex-start;
 }
 
 .blogs-inner-box {
-  width: 340px;
+  width: 406px;
   justify-content: flex-start;
   justify-content: left;
   text-align: left;
-  padding: 20px;
+  padding: 18px;
 }
 .other-details {
   padding-top: 32px;
@@ -63,8 +69,8 @@
 
 .blogs-image {
   position: relative;
-  height: 300px;
-  width: 300px;
+  height: 370px;
+  width: 370px;
   margin-bottom: 20px;
 
   img {
@@ -90,22 +96,28 @@
 
   a {
     color: white;
-    padding: 10px;
+    padding: 16px 32px;
     background: $foundation-primary-red;
     font-weight: 700;
-    width: 46%;
+    width: 52%;
     border-radius: 4px;
     margin-bottom: 10px;
+    font-family: Roboto;
   }
 }
 .blogs-info-inner-box {
-  padding: 10px 10px;
+  padding: 10px 25px;
   gap: 12px;
 }
 .details {
   flex-wrap: nowrap;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 38px;
+  padding: 0 10px;
+}
+.details-inner-box {
+  gap: 10px;
+  flex-wrap: nowrap;
 }
 .blogs-category {
   position: absolute;
@@ -124,22 +136,29 @@
   padding-bottom: 10px;
 }
 .publication-date {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.16px;
+  font-size: 14px;
+  // line-height: 24px;
+  letter-spacing: 2px;
   text-transform: capitalize;
   position: absolute;
   color: white;
   background: $foundation-primary-orange;
-  bottom: 86px;
+  bottom: 110px;
   right: 30px;
   padding: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  width: 50px;
+  // width: 50px;
   text-align: center;
   font-size: medium;
   font-weight: 800;
+  display: grid;
+  span {
+    font-size: 40px;
+    font-family: Roboto-medium;
+    font-variant: small-caps;
+    line-height: 48px;
+  }
 }
 

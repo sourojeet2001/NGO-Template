@@ -1,8 +1,8 @@
 @use "../base/mixins" as *;
 @use "../base/variables" as *;
 .contactus {
-  border-radius: 70px;
-  background: linear-gradient(90deg, rgba(44, 44, 44, 0.5)), url("../../assets/images/volunteer.webp") no-repeat;
+  border-radius: 20px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("../../assets/images/volunteer.webp"), lightgray -1.999px -442.286px / 100% 264.757% no-repeat;
   background-position: center 68%;
   background-size: cover;
   gap: 32px;
