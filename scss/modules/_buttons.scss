@@ -2,7 +2,6 @@
 @use "../base/mixins" as *;
 
 .get-started {
-  // width: 112.141px;
   padding: 12px 30px;
   gap: 12px;
   border-radius: 4px;
@@ -20,8 +19,6 @@
   align-items: $center-alignment;
   text-align: $center-alignment;
   transition: all 0.5s ease;
-  // backdrop-filter: blur(40px);
-
   &:hover {
     @include btn-hover
   }
@@ -41,7 +38,6 @@
   background: #f05e28;
   position: fixed;
   top: 50%;
-  // bottom: -150px;
   padding: 8px 16px;
   border-radius: 4px;
   -webkit-transform: rotate(90deg);
@@ -51,10 +47,7 @@
   border-color: #f05e28;
   outline: 0;
   border: none;
-  // z-index: 10000;
-  // left: 100%;
   right: 0;
-  // transition: 0.7s all  ;
   animation: fadeIn 0.9s;
 }
 

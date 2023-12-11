@@ -154,7 +154,6 @@
     </header>
     <!-- Header End. -->
   </nav>
-  
   <body>
     <main>
       <!-- Banner Slider Start. -->
@@ -2244,10 +2243,12 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle cx="28" cy="28.3862" r="28" fill="white" />
-                <path
+                <a href="#">
+                  <path
                   d="M37.4571 29.0933C37.8476 28.7028 37.8476 28.0696 37.4571 27.6791L31.0931 21.3152C30.7026 20.9246 30.0695 20.9246 29.6789 21.3152C29.2884 21.7057 29.2884 22.3389 29.6789 22.7294L35.3358 28.3862L29.6789 34.0431C29.2884 34.4336 29.2884 35.0668 29.6789 35.4573C30.0695 35.8478 30.7026 35.8478 31.0931 35.4573L37.4571 29.0933ZM19.25 29.3862L36.75 29.3862L36.75 27.3862L19.25 27.3862L19.25 29.3862Z"
                   fill="#1D2130"
                 />
+                </a>
               </svg>
               <div class="event-date"><span>10</span>DEC</div>
             </div>
@@ -2264,10 +2265,12 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle cx="28" cy="28.3862" r="28" fill="white" />
-                <path
+                <a href="#">
+                  <path
                   d="M37.4571 29.0933C37.8476 28.7028 37.8476 28.0696 37.4571 27.6791L31.0931 21.3152C30.7026 20.9246 30.0695 20.9246 29.6789 21.3152C29.2884 21.7057 29.2884 22.3389 29.6789 22.7294L35.3358 28.3862L29.6789 34.0431C29.2884 34.4336 29.2884 35.0668 29.6789 35.4573C30.0695 35.8478 30.7026 35.8478 31.0931 35.4573L37.4571 29.0933ZM19.25 29.3862L36.75 29.3862L36.75 27.3862L19.25 27.3862L19.25 29.3862Z"
                   fill="#1D2130"
                 />
+                </a>
               </svg>
               <div class="event-date"><span>10</span>DEC</div>
             </div>
@@ -2427,7 +2430,6 @@
     <script src="./dist/js/menu.min.js" type="text/javascript"></script>
     <script src="./dist/js/panneltoggler.min.js" type="module"></script>
     <script src="./dist/js/global.min.js" type="text/javascript"></script>
-    <!-- <script src="./dist/js/maphover.min.js" type="text/javascript"></script> -->
     <script>
       AOS.init();
       <!-- AOS.refresh(); -->
@@ -2488,6 +2490,7 @@
             placeholder="Email address"
             required
             onblur="this.setAttribute('value', this.value);"
+            autofocus="false"
           />
           <span class="validation-text"
             >Please enter a valid email address.</span

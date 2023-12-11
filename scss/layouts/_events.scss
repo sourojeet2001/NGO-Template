@@ -1,18 +1,10 @@
+@use "../base/variables" as *;
 .our-events {
   flex-wrap: nowrap;
   justify-content: flex-start;
   gap: 24px;
 }
 .events-header {
-  // h2::after {
-  //   display: inline-block;
-  //   content: "";
-  //   border-top: 0.5px solid #E5E5E5;
-  //   width: 62rem;
-  //   margin: 0 1rem;
-  //   left: 144px;
-  //   transform: translate(24%,-69px);
-  // }
   padding: 50px 0;
   h2 {
     display: flex;
@@ -41,10 +33,23 @@
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
-  // gap: 30px;
   padding-right: 24px;
   flex-wrap: nowrap;
   align-items: center;
+
+  svg {
+    &:hover {
+      circle {
+        fill: $foundation-primary-red;
+        transition: 0.9s all ease-in-out;
+      }
+      path {
+        fill: white;
+        transform: translateX(10%);
+        transition: 0.9s all ease-in-out;
+      }
+    }
+  }
 }
 
 .events-inner-box {
@@ -89,9 +94,7 @@
     left: 0;
     top: 0;
     padding: 20px;
-    // border-top-right-radius: 10px;
     border-bottom-right-radius: 30px;
-    // width: 80px;
     text-align: center;
     font-size: 16px;
     font-weight: 500;

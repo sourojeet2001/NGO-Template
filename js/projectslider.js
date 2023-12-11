@@ -27,10 +27,12 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 468,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerPadding: '60px',
+          arrows: false,
         }
       }
     ]

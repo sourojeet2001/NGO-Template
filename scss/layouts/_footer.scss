@@ -42,9 +42,11 @@ footer {
 .branding {
   justify-content: normal;
 }
-// .brand-info {
-//   width: 32%;
-// }
+.brand {
+  img {
+    width: 100px;
+  }
+}
 .pages,
 .footer-services,
 .footer-contact {
@@ -54,7 +56,7 @@ footer {
     padding-top: 10px;
   }
   a {
-    line-height: 64px;
+    line-height: 44px;
     letter-spacing: 0.22px;
     text-align: left;
     color: white;
@@ -67,12 +69,8 @@ footer {
     }
   }
 }
-.pages,
-.footer-services {
-  // width: 18%;
-}
+
 .footer-contact {
-  // width: 20%;
   address {
     padding-top: 16px;
     color: white;
@@ -97,7 +95,6 @@ footer {
   gap: 0;
 
   a {
-    // opacity: 0.5;
     &:hover {
       @include social-icons;
     }
@@ -162,6 +159,9 @@ footer {
       &:focus {
         outline: 0;
       }
+    }
+    input[type="email"] {
+      padding: 20px 60px;
     }
     .submit-btn {
       background: #fff;

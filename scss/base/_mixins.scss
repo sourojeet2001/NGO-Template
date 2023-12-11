@@ -50,10 +50,6 @@
 
 
 @mixin nav-slider {
-  // .arrow-left, .arrow-right {
-  //   display: none;
-  //   z-index: -19999;
-  // }
   .menu-btn {
     display: block;
     position: absolute;
@@ -135,6 +131,7 @@
       padding-right: 1rem;
       transform: translateY(-100%);
       @include transition-ease;
+      // z-index: 2000;
   
       &.open {
         transform: translateY(0);

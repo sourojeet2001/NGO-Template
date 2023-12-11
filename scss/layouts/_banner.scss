@@ -1,5 +1,6 @@
 .banner-slider {
   height: calc(100vh - 90px);
+  margin-top: -90px;
   .slick-dotted.slick-slider {
     margin-bottom: 0px; 
   }
@@ -49,9 +50,6 @@
   width: 100%;
   height: 100%;
   height: 100vh;
-}
-.hero-banner1.hero-banner { 
-    background: url(../../assets/images/volunteer.webp) !important;
 }
 .hero-banner .container {
   height: 100%;

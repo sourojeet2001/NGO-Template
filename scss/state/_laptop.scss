@@ -5,7 +5,7 @@
 // Responsive Desktop. 
 @media screen and (max-width: 1200px) {
   .container {
-    max-width: 1100px;
+    max-width: 1140px;
   }
   .primary-navbar {
     gap: 60px;
@@ -121,6 +121,14 @@
       font-size: 12px;
     }
   }
+  .testimonials-inner {
+    .arrow-left-testimonial {
+      left: 3%;
+    }
+    .arrow-right-testimonial {
+      right: 3%;
+    }
+  }
   .personal-details {
     h4 {
       font-size: 16px;
@@ -137,7 +145,7 @@
     }
   }
   .events-box {
-    padding: 46px 62px;
+    padding: 46px 54px;
   }
   .person {
     gap: 5px;
@@ -152,10 +160,21 @@
   .project-heading {
     padding: 40px 0;
   }
+  .projects-cards-wrap {
+    .card-inner-box {
+      padding: 18px 44px;
+      .get-started {
+        width: 50%;
+      }
+    }
+  }
   .other-details {
     padding-top: 20px;
     padding-bottom: 20px;
     gap: 50px;
+  }
+  .testimonials-wrap {
+    margin: 100px 0;
   }
   .testimonials-inner {
     h2 {
@@ -173,8 +192,8 @@
     padding-top: 16px;
   }
   .footer-region {
-    gap: 76px;
-    flex-wrap: wrap;
+    gap: 56px;
+    flex-wrap: nowrap;
     a {
       line-height: 50px;
       font-size: 18px;

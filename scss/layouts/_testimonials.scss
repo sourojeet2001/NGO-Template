@@ -1,7 +1,7 @@
 .testimonials-wrap {
   margin: 150px 0;
   background: url("../../assets/images/testimonialbg.webp");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -143,9 +143,6 @@
 }
 .testimonial {
   width: 80%;
-  // border-left: 1px solid rgb(166, 166, 166);
-  // padding-left: 20px;
-
   p {
     font-size: 14px;
     padding-left: 20px;

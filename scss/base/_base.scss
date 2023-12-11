@@ -12,10 +12,20 @@ body {
   overflow-x: hidden;
 }
 header {
-  // position: sticky;
-  // top: 0;
-  // box-shadow: 0 0 60px 0 rgba(0,0,0,0.1);
-  // z-index: 999;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 60px 0 rgba(0,0,0,0.1);
+  z-index: 999;
+  background: white;
+}
+.sticky > .banner-slider {
+  margin-top: 0;
 }
 img {
   object-fit: cover;
@@ -23,7 +33,11 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 16px;
-  max-width: 1280px;
+  max-width: 1320px;
+}
+.slick-disabled {
+  opacity: 0;
+  pointer-events:none;
 }
 
 h1, h2, h3, h4,h5 {
