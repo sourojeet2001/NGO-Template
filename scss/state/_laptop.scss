@@ -140,7 +140,7 @@
   }
   .card-inner-box {
     .get-started {
-      width: 50%;
+      width: 118px;
       padding: 12px 16px;
     }
   }
@@ -201,5 +201,9 @@
   }
   .newsletter {
     margin-left: 0;
+
+    &::before {
+      transform: translate(116px,30px);
+    }
   }
 }

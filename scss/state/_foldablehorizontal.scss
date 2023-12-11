@@ -4,7 +4,7 @@
 // Responsive for Galaxy Fold Horizontal.
 @media screen and (max-width: 720px) {
   .banner-inner-text {
-    margin-top: 32%;
+    margin-top: 0;
     h1 {
       width: 88%;
       font-size: 26px;
@@ -19,6 +19,9 @@
     margin-right: 15%;
     margin-top: 42%;
     margin-left: 0;
+  }
+  .special-inner-text-box {
+    padding-left: 40px;
   }
 }
 
