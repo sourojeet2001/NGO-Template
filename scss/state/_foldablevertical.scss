@@ -2,9 +2,8 @@
 @use "../base/mixins" as *;
 @use "../state/mobile" as *;
 
-
 // Responsive for Galaxy Fold Vertical.
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 290px) {
   h2 {
     font-size: 20px;
     line-height: 24px;
@@ -12,7 +11,7 @@
   .container {
     max-width: 270px;
   }
-  
+
   ul.flex-center.menu-item-list.open {
     padding: 0;
   }
@@ -20,7 +19,7 @@
   .hero-banner {
     background: rgb(255, 238, 207);
   }
-  
+
   .secondary-navbar {
     .nav-contact {
       gap: 18px;
@@ -36,7 +35,7 @@
       padding: 0 11px;
       margin-right: 4px;
     }
-  } 
+  }
   .banner-text-box {
     height: 100%;
   }
@@ -48,9 +47,9 @@
     }
     h1 {
       width: 90%;
-      font-size: 18px;  
+      font-size: 18px;
     }
-  } 
+  }
   .banner-text-info {
     width: 12%;
     padding-right: 0;
@@ -86,10 +85,9 @@
     width: 226px;
   }
   .blog-info {
-    margin: -25px 24px;
     position: absolute;
     bottom: -112px;
-    left: 7px;
+    left: 0px;
     right: 72px;
     a {
       padding: 6px;
@@ -97,106 +95,110 @@
       width: 100px;
     }
   }
-.blogs-title {
-  font-size: 14px;
-  line-height: 18px;
-}
-.publication-date {
-  bottom: 60px;
-  right: 11px;
-  font-size: 16px;
-}
-.other-details {
-  .details {
-    gap: 48px;
-
-    p {
-      font-size: 10px;
-      line-height: 10px;
-    }
-  }
-}
-.testimonials-inner {
-  h2 {
-    width: 92%;
-    padding: 8px 4px;
-    margin-left: 34px;
+  .blogs-title {
     font-size: 14px;
-    line-height: 20px;
-    padding-bottom: 20px;
+    line-height: 18px;
   }
-}
-.person {
-  width: 50%;
-}
-.card-inner {
-  width: 186px;
+  .publication-date {
+    bottom: 42px;
+    right: 18px;
+    font-size: 16px;
+  }
+  .other-details {
+    .details {
+      gap: 48px;
 
-  &::before {
-    width: 156px;
-    // left: -8px;
-  }
-}
-.contactus {
-  gap: 11px;
-  padding: 38px 18px;
-
-  .contact-btn-primary {
-    padding: 12px 18px;
-  }
-  .contact-btn-secondary {
-    padding: 10px 18px;
-  }
-}
-
-.events-box {
-  padding: 18px 30px;
-  h4 {
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  h5 {
-    &::after {
-      transform: translate(90px,-18px);
-      border-top: 1px solid black;
+      p {
+        font-size: 10px;
+        line-height: 10px;
+      }
     }
   }
-  .events-inner-box {
-    justify-content: flex-start;
-    gap: 0px;
-    padding-left: 24px;
-
-    h3 {
-      line-height: 18px;
-      font-size: 16px;
+  .testimonials-inner {
+    h2 {
+      width: 92%;
+      padding: 8px 4px;
+      margin-left: 34px;
+      font-size: 14px;
+      line-height: 20px;
+      padding-bottom: 20px;
     }
   }
-}
-.events-header h2 span {
-  width: 110%;
-}
-.event-date {
-  line-height: 18px;
-  letter-spacing: -0.84px;
-  width: 50px;
-  // padding: 12px;
-
-  span {
-    font-size: 26px;
-    line-height: 26px;
+  .person {
+    width: 50%;
   }
-}
-.footer-region {
-  margin-top: 46px;
-}
-.newsletter {
-  margin-left: 62px;
-}
-.newsletter form input[type=email] {
-  padding: 10px 10px;
-}
-.btn-default {
-  padding: 8px 12px;
-}
+  .card-inner {
+    width: 186px;
+
+    &::before {
+      width: 156px;
+      // left: -8px;
+    }
+  }
+  .contactus {
+    gap: 11px;
+    padding: 38px 18px;
+
+    .contact-btn-primary {
+      padding: 12px 18px;
+    }
+    .contact-btn-secondary {
+      padding: 10px 18px;
+    }
+  }
+
+  .events-box {
+    padding: 18px 30px;
+    h4 {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    h5 {
+      &::after {
+        transform: translate(90px, -18px);
+        border-top: 1px solid black;
+      }
+    }
+    .events-inner-box {
+      justify-content: flex-start;
+      gap: 0px;
+      padding-left: 24px;
+
+      h3 {
+        line-height: 18px;
+        font-size: 16px;
+      }
+    }
+  }
+  .events-header h2 span {
+    width: 110%;
+  }
+  .event-date {
+    line-height: 18px;
+    letter-spacing: -0.84px;
+    width: 50px;
+    // padding: 12px;
+
+    span {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+  .footer-region {
+    margin-top: 46px;
+  }
+  .newsletter {
+    margin-left: 0;
+  }
+  .newsletter form input[type="email"] {
+    padding: 10px 10px;
+    width: 124px;
+  }
+  .btn-default {
+    padding: 8px 12px;
+  }
+  .brand-logo {
+    height: 40px;
+  }
 }

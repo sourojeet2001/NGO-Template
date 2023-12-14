@@ -64,6 +64,12 @@
       width: 20px;
     }
   }
+  .slick-track {
+    margin-bottom: 20px;
+  }
+  .slick-dots {
+    margin: 0 !important;
+  }
 }
 .projects-cards-wrap .card {
   border-radius: 20px;
@@ -76,16 +82,19 @@
   background: linear-gradient(90deg, rgba(11, 7, 6, 0.6)), url("../../assets/images/image1.webp");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .card2 {
   background: linear-gradient(90deg, rgba(11, 7, 6, 0.6)), url("../../assets/images/image4.webp");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .card3 {
   background: linear-gradient(90deg, rgba(11, 7, 6, 0.6)), url("../../assets/images/image3.webp");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .card-inner-box {
   h4, p {
@@ -109,7 +118,7 @@
     padding: 16px 34px;
     background: white;
     color: black;
-    width: 50%;
+    width: 154px;
     font-family: Roboto-medium;
   }
 }

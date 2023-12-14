@@ -13,6 +13,16 @@ document.addEventListener('DOMContentLoaded', function () {
     );
   }
 
+  var offset = nav.offsetTop;
+  function updateNavbar() {
+    if (window.scrollY > offset) {
+      nav.classList.add('sticky');
+    } 
+    else {
+      nav.classList.remove('sticky');
+    }
+  }
+
   function handleScroll() {
     if (isOutOfViewport(bannerSlider)) {
       aside.style.display = 'block';
@@ -22,17 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // function navSticky () {
-  //   if (isOutOfViewport(nav)) {
-  //     nav.classList.add('sticky');
-  //   }
-  // }
 
-
-  window.addEventListener('scroll', handleScroll);  
-  // window.addEventListener('scroll', navSticky);
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('scroll', updateNavbar);  
 
   handleScroll();
-
-  navSticky();
 });

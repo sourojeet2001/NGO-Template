@@ -56,7 +56,7 @@
   .counts {
     width: 62%;
     .learn-more {
-      width: 52%;
+      width: 112px;
       padding: 12px 12px;
     }
   }
@@ -74,17 +74,22 @@
     gap: 144px;
     flex-wrap: wrap;
   }
+  .blogs-inner-box {
+    &:last-child:nth-child(odd) {
+      padding-top: 90px;
+    }
+  }
   .hero-banner {
     height: calc(100dvh - 124px);
   }
 
   .banner-text-info {
-      padding-right: 15%;
-      padding-left: 2px;
-      margin-right: 3%;
-      width: 26%;
-      margin-top: 18%;
-      margin-left: -8%;
+    padding-right: 84px;
+    padding-left: 0;
+    margin-right: 0;
+    width: 184px;
+    margin-top: 268px;
+    margin-left: 82px;
   }
   .get-started {
     width: 33%;
@@ -115,6 +120,7 @@
 
   .testimonials-wrap {
     background-position: unset;
+    margin-top: 200px;
   }
   .testimonials {
     p {
@@ -159,12 +165,14 @@
   }
   .project-heading {
     padding: 40px 0;
+    padding-left: 60px;
+    width: 430px;
   }
   .projects-cards-wrap {
     .card-inner-box {
       padding: 18px 44px;
       .get-started {
-        width: 50%;
+        width: 120px;
       }
     }
   }
@@ -175,6 +183,7 @@
   }
   .testimonials-wrap {
     margin: 100px 0;
+    margin-top: 200px;
   }
   .testimonials-inner {
     h2 {
@@ -193,7 +202,7 @@
   }
   .footer-region {
     gap: 56px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     a {
       line-height: 50px;
       font-size: 18px;
@@ -201,6 +210,7 @@
   }
   .newsletter {
     margin-left: 0;
+    // width: 50%;
 
     &::before {
       transform: translate(116px,30px);

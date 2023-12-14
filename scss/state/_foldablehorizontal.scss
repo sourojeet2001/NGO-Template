@@ -14,13 +14,16 @@
     }
   }
   .banner-text-info {
-    padding-right: 6%;
+    padding-right: 56px;
     padding-left: 0;
-    margin-right: 15%;
-    margin-top: 42%;
+    margin-right: 27px;
+    margin-top: 158px;
     margin-left: 0;
   }
   .special-inner-text-box {
+    padding-left: 40px;
+  }
+  .counts {
     padding-left: 40px;
   }
 }
@@ -29,8 +32,8 @@
 @media screen and (max-width: 653px) {
   .secondary-navbar {
     .get-started {
-      width: 17%;
-      margin-right: 34px;
+      width: 76px;
+      margin-right: 0;
     }
   }
   h1 {
@@ -39,12 +42,12 @@
   }
   .banner-inner-text {
     .get-started {
-      width: 42%;
+      width: 124px;
     }
   }
   .banner-text-info {
-    margin-right: 0;
-    margin-top: 72%;
+    margin-right: 80px;
+    margin-top: 162px;
   }
   .counts {
     width: 80%;

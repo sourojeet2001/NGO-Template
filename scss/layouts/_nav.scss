@@ -2,11 +2,21 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
   
+nav {
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+.sticky {
+  position: sticky;
+  background: white;
+  box-shadow: 0 0 60px 0 rgba(0,0,0,0.1);
+}
 .primary-navbar {
   padding: 18px 0;
   flex-wrap: nowrap;
   gap: 120px;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   .get-started {
     background: #1D2130;

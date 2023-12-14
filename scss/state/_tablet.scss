@@ -6,14 +6,8 @@
   .container {
     max-width: 960px;
   }
-
-  // .hero-banner {
-  //   background: #f4f1eb;
-  // }
-
   .banner-slider {
     margin-top: -124px;
-    // height: calc(80dvh - 125px);
     height: 100vh;
     .slick-track {
       height: 100%;
@@ -23,9 +17,9 @@
     }
     .hero-banner {
       height: 100%;
+      background-position: top;
     }
   }
-
   .primary-navbar {
     padding: 10px 0;
     justify-content: space-between;
@@ -35,9 +29,9 @@
     display: block;
     .get-started {
       width: 85px;
-      padding: 0px 16px;
+      padding: 0 2.5%;
       font-size: 14px;
-      margin-right: 78px;
+      margin-right: 0;
     }
     .nav-contact {
       display: flex;
@@ -58,17 +52,21 @@
       }
     }
   }
+  
   .banner-text-box {
     height: 120%;
   }
   .banner-text-info {
-    padding-right: 6%;
-    padding-left: 0;
-    margin-right: 17%;
-    margin-top: 20%;
-    margin-left: -75px;
+    padding-right: 37px;
+    padding-left: 95px;
+    margin-right: -46px;
+    margin-top: 242px;
+    margin-left: -116px;
   }
   @include nav-slider;
+  .menu-btn {
+    right: 3%;
+  }
   .logo {
     height: 35px;
     text-align: center;
@@ -128,11 +126,12 @@
   }
   .services-item-box {
     flex-wrap: wrap;
+    gap: 20px;
     // gap: 28px;
   }
   .services-inner-item-box {
-    width: 50%;
-    flex: 50%;
+    width: 48%;
+    flex: 48%;
     padding: 0 56px;
     h4 {
       padding-bottom: 12px;
@@ -161,6 +160,9 @@
       width: 100%;
     }
   }
+  .special {
+    justify-content: center;
+  }
   .projects-cards-wrap {
     .card-inner-box {
       .get-started {
@@ -173,7 +175,12 @@
   }
   .blogs-box {
     justify-content: center;
-    gap: 130px;
+    gap: 216px;
+  }
+  .blogs-inner-box {
+    &:last-child:nth-child(odd) {
+      padding-top: 0;
+    }
   }
   .counts {
     .learn-more {
@@ -181,13 +188,22 @@
       width: 130px;
     }
   }
+  .count--section1,
+  .count--section2 {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
   .clients a{
-    padding-bottom: 10px;
+    padding-bottom: 70px;
+
+    &:nth-child(3) {
+      margin-left: -5px;
+    }
   }
   .client-header {
     h5 {
       span {
-        width: 40%;
+        width: 252px;
       }
     }
   }
@@ -195,13 +211,14 @@
 
   .testimonials-wrap {
     margin: 72px 0;
+    margin-top: 200px;
   }
   .testimonials-inner {
     .arrow-left-testimonial {
-      left: -50px;
+      left: -3%;
     }
     .arrow-right-testimonial {
-      right: -50px;
+      right: -3%;
     }
   }
 
@@ -222,6 +239,7 @@
     h2 {
       width: 90%;
       padding: 10px 17px;
+      padding-bottom: 28px;
     }
   }
   .card-deck {
@@ -231,18 +249,19 @@
     }
   }
   .slick-dotted.slick-slider {
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
   .card {
     margin-bottom: 20px;
   }
   .card-inner {
-    width: 500px;
+    width: 84%;
     justify-content: center;
-    padding: 50px 38px;
+    // padding: 50px 38px;
+    padding: 5%;
 
     &::before {
-      width: 500px;
+      width: 100%;
       margin-bottom: 10px;
     }
   }
@@ -253,6 +272,8 @@
     }
   }
   .person {
+    width: 100%;
+    text-align: center;
     gap: 5px;
     border-right: none;
     img {
@@ -280,7 +301,7 @@
   }
   .publication-date {
     font-size: 18px;
-    bottom: 96px;
+    bottom: 24px;
   }
 
   .contactus {
@@ -295,7 +316,7 @@
   }
 
   .events-header h2 span {
-    width: 34%;
+    width: 246px;
   }
   .events-box {
     flex-wrap: nowrap;
@@ -365,8 +386,11 @@
   .nav-contact {
     .get-started {
       width: 78px;
-      margin-right: 40px;
+      margin-right: 0;
     }
+  }
+  .menu-btn {
+    right: 6%;
   }
   .banner-inner-text {
     padding-top: 85px;

@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".projects-cards-wrap").slick({
     centerMode: true,
     centerPadding: '60px',
-    dots: false,
+    dots: true,
     arrows: true,
     infinite: true,
     prevArrow: '<div class="arrow-left"><i class="fa-solid fa-arrow-left" style="color: #f0f2f4;"></i></div>',
