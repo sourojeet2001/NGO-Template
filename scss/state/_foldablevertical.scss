@@ -3,7 +3,7 @@
 @use "../state/mobile" as *;
 
 // Responsive for Galaxy Fold Vertical.
-@media screen and (max-width: 290px) {
+@media screen and (max-width: 300px) {
   h2 {
     font-size: 20px;
     line-height: 24px;
@@ -64,6 +64,20 @@
   }
   .client-header h5 span {
     width: 125%;
+  }
+  .animated-logo {
+    left: 24px;
+    bottom: 24%;
+  }
+  .centerlogo {
+    height: 50px;
+    width: 50px;
+  }
+  .logoborder {
+    height: 84px;
+    width: 84px;
+    left: -17px;
+    bottom: -13px;
   }
   .projects-cards-wrap .card-inner-box {
     padding: 14px 12px;

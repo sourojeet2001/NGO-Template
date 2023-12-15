@@ -79,8 +79,11 @@
       padding-top: 90px;
     }
   }
+  .banner-slider {
+    height: 100vh;
+  }
   .hero-banner {
-    height: calc(100dvh - 124px);
+    // height: calc(100dvh - 124px);
   }
 
   .banner-text-info {
@@ -97,7 +100,7 @@
     font-size: 16px;
   }
   .banner-text-box {
-    margin-left: 100px;
+    // margin-left: 100px;
   }
   .banner-inner-text {
     .get-started {
@@ -153,6 +156,11 @@
   .events-box {
     padding: 46px 54px;
   }
+  .events-inner-box {
+    h3 {
+      width: 86%;
+    }
+  }
   .person {
     gap: 5px;
     img {
@@ -162,11 +170,13 @@
   }
   .projects-header {
     margin-bottom: 0;
+    margin-left: 77px;
   }
   .project-heading {
     padding: 40px 0;
     padding-left: 60px;
     width: 430px;
+    margin-left: 18px;
   }
   .projects-cards-wrap {
     .card-inner-box {

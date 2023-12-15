@@ -75,6 +75,10 @@
     flex-wrap: wrap;
   }
   .banner-slider {
+    // height: calc(80vh - 80px);
+    height: 100vh;
+  }
+  .banner-slider {
       .slick-dots {
         margin: 6px 0!important;
     }
@@ -83,7 +87,7 @@
     }
   }
   .hero-banner {
-    height: calc(100dvh - 124px);
+    // height: calc(100dvh - 124px);
     background-position:  0 10px;
   }
   .get-started {
@@ -92,7 +96,8 @@
     font-size: 16px;
   }
   .banner-text-box {
-    margin-left: 100px;
+    // margin-left: 100px;
+    width: 100%;
   }
   .banner-inner-text {
     .get-started {
@@ -112,6 +117,9 @@
     margin-top: 273px;
     margin-left: -193px;
   }
+  .services {
+    // padding-top: 20px;
+  }
   .services-inner-item-box {
     padding: 28px 58px;
     // p {
@@ -127,6 +135,7 @@
     img {
       height: 100%;
       width: 100%;
+      object-fit: fill;
     }
   }
   .client-header {

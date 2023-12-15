@@ -11,6 +11,16 @@
 body {
   overflow-x: hidden;
 }
+#result {
+  background-color: #eee;
+  padding: 10px 15px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-height: 50px;
+  overflow: auto;
+}
 // header {
 //   position: sticky;
 //   top: 0;

@@ -1,5 +1,6 @@
 .banner-slider {
-  height: calc(100vh - 90px);
+  // height: calc(100vh - 90px);
+  height: 100vh;
   margin-top: -90px;
   .slick-dotted.slick-slider {
     margin-bottom: 0px; 
@@ -61,16 +62,17 @@
   height: 100%;
   align-items: center;
   flex-direction: row;
-  width: 84%;
+  width: 80%;
 }
 .banner-text-info {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  width: 100px;
-  margin-top: 12.5rem;
-  padding: 0; 
-  margin-left: 5.375rem;
+  display: none;
+  // display: flex;
+  // justify-content: flex-start;
+  // flex-direction: column;
+  // width: 100px;
+  // margin-top: 12.5rem;
+  // padding: 0; 
+  // margin-left: 5.375rem;
   // top: 0;
   // position: absolute;
   // right: 569px;
@@ -89,7 +91,7 @@
   width: 60%;
 
   .get-started {
-    width: 27%;
+    width: 200px;
     margin-top: 30px;
   }
 }

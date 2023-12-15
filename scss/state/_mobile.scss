@@ -73,16 +73,21 @@
     height: calc(100dvh - 125px);
   }
   .banner-slider .slick-dots {
-    bottom: 62 !important;
+    bottom: 0 !important;
   }
   .banner-text-box {
-    height: 84%;
+    height: 100%;
+    width: 100%;
   }
   .banner-text-info {
+    display: block;
     margin-right: 0;
-    margin-top: 72%;
+    margin-top: 40%;
     width: 18%;
     padding-right: 0;
+    p {
+      line-height: 18px;
+    }
   }
   .banner-inner-text {
     width: 71%;
@@ -90,7 +95,7 @@
       width: 84%;
     }
     .get-started {
-      width: 63%;
+      width: 120px;
       margin-top: 15px;
     }
     p {
@@ -178,15 +183,15 @@
   }
   .animated-logo {
     left: 40px;
-    bottom: 32%;
+    bottom: 29%;
   }
   .centerlogo {
-    height: 65px;
-    width: 65px;
+    height: 69px;
+    width: 68px;
   }
   .logoborder {
-    height: 110px;
-    width: 110px;
+    height: 114px;
+    width: 114px;
     left: -22px;
     bottom: -18px;
   }
@@ -243,7 +248,7 @@
     // bottom: 63px;
     // right: 41px;
     font-size: 16px;
-    // right: 4%;
+    // right: 5.5%;
 
     span {
       font-size: 28px;
@@ -375,7 +380,7 @@
   }
   .publication-date {
     font-size: 18px;
-    right: 4%;
+    right: 5.5%;
     bottom: 42px;
   }
 
@@ -498,6 +503,7 @@
   }
   .newsletter form input[type=email] {
     padding: 20px 15px;
+    // padding: 20px 40px
     // margin-left: 0;
   }
   .btn-default {
@@ -529,6 +535,9 @@
       width: 60%;
     }
   }
+  .banner-text-info {
+    display: none;
+  }
   .counts .learn-more {
     width: 100px;
   }
@@ -542,6 +551,10 @@
   }
   .special-inner-text-box {
     padding-left: 44px;
+  }
+  .animated-logo {
+    left: 18px;
+    bottom: 24%;
   }
   .blogs-info-inner-box {
     padding: 10px 10px;
@@ -605,12 +618,12 @@
     padding-bottom: 10px;
   }
   .card-inner {
-    width: 238px;
+    width: 218px;
     box-shadow: -2px 1px 12px #e3e1e1;
     padding: 28px 0;
 
     &::before {
-      width: 210px;
+      width: 190px;
       left: -8px;
     }
   }
@@ -637,6 +650,7 @@
       font-size: 20px;
     }
     h5 {
+      width: 150%;
       &::after {
         transform: translate(-8px,-4px);
       }
