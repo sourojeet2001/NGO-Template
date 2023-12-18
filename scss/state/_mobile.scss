@@ -198,8 +198,8 @@
 
   .count--section1,
   .count--section2 {
-    flex-wrap: nowrap;
-    gap: 0;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   .blogs-wrap {
     margin-bottom: 120px;

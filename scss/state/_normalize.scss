@@ -1,0 +1,23 @@
+@media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) {
+  h1, h2, h3, h4, h5, a {
+    font-weight: 500 !important;
+  }
+  .blogs-header, .special-header, .testimonials-header, .projects-header, .services--children-header {
+    img {
+      top: 26px;
+    }
+  }
+  .slick-dots {
+    li button:before {
+      font-size: 20px !important;
+    }
+  }
+  .count--section1, .count--section2 {
+    justify-content: flex-start;
+    gap: 10px;
+
+    // @media screen and (min-width: 992px) {
+    //   gap: 20px !important;
+    // }
+  }
+}

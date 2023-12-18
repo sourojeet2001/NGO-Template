@@ -1,0 +1,1 @@
+{"version":3,"sources":["state/_normalize.scss"],"names":[],"mappings":"AAAA,0EACE,EAAA,GAAA,GAAA,GAAA,GAAA,GACE,YAAA","file":"normalize.min.css","sourcesContent":["@media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) {\n  h1, h2, h3, h4, h5, a {\n    font-weight: 500;\n  }\n}"]}

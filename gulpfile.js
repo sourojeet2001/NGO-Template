@@ -2,12 +2,17 @@ let gulp = require('gulp'),
 sass = require('gulp-dart-sass'),
 cleanCSS = require('gulp-clean-css');
 rename = require('gulp-rename');
-const autoprefixer = require('gulp-autoprefixer');
+// const autoprefixer = require('gulp-autoprefixer');
+// const autoprefixer = require('autoprefixer');
+const autoprefixer = require('autoprefixer-core');
 const sourcemaps = require('gulp-sourcemaps');
-const svgSprite = require('gulp-svg-sprite');
+// const svgSprite = require('gulp-svg-sprite');
 const plumber = require('gulp-plumber');
 const terser = require('gulp-terser');
 const babel = require('gulp-babel');
+const $ = require('gulp-load-plugins')()
+const postcss = require('gulp-postcss');
+const pxtorem = require('postcss-pxtorem');
 
 var config = {
   mode: {
@@ -40,6 +45,12 @@ var paths = {
   }
 };
 
+const postcssProcessors = [
+  pxtorem({
+    propList: ['font', 'font-size', 'line-height', 'letter-spacing', '*margin*', '*padding*'],
+    mediaQuery: true,
+  }),
+];
 function styles() {
   return gulp.src([paths.styles.src, paths.vendor.srcCss, paths.vendor.minCss])
     .pipe(sourcemaps.init())
@@ -48,10 +59,24 @@ function styles() {
       errLogToConsole: true,
     }))
     .on('error', console.error.bind(console))
-    .pipe(autoprefixer({
-      overrideBrowserslist: ['last 3 versions'],
-      cascade: false,
-    }))
+    // .pipe(autoprefixer({
+    //   overrideBrowserslist: ['last 3 versions'],
+    //   cascade: false,
+    // }))
+    // .pipe($.postcss(postcssProcessors))
+    // .pipe(postcss([autoprefixer({
+    //   browsers: [
+    //     'Chrome >= 35',
+    //     'Firefox >= 38',
+    //     'Edge >= 12',
+    //     'Explorer >= 10',
+    //     'iOS >= 8',
+    //     'Safari >= 8',
+    //     'Android 2.3',
+    //     'Android >= 4',
+    //     'Opera >= 12'],
+    // })]))
+    .pipe(postcss([ autoprefixer({ browsers: ["> 0%"] }) ]))
     .pipe(cleanCSS())
     .pipe( rename( { suffix: '.min' } ) )
     .pipe(sourcemaps.write('./'))
