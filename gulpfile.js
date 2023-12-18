@@ -64,18 +64,18 @@ function styles() {
     //   cascade: false,
     // }))
     // .pipe($.postcss(postcssProcessors))
-    // .pipe(postcss([autoprefixer({
-    //   browsers: [
-    //     'Chrome >= 35',
-    //     'Firefox >= 38',
-    //     'Edge >= 12',
-    //     'Explorer >= 10',
-    //     'iOS >= 8',
-    //     'Safari >= 8',
-    //     'Android 2.3',
-    //     'Android >= 4',
-    //     'Opera >= 12'],
-    // })]))
+    .pipe(postcss([autoprefixer({
+      browsers: [
+        'Chrome >= 35',
+        'Firefox >= 38',
+        'Edge >= 12',
+        'Explorer >= 10',
+        'iOS >= 8',
+        'Safari >= 8',
+        'Android 2.3',
+        'Android >= 4',
+        'Opera >= 12'],
+    })]))
     .pipe(postcss([ autoprefixer({ browsers: ["> 0%"] }) ]))
     .pipe(cleanCSS())
     .pipe( rename( { suffix: '.min' } ) )

@@ -80,3 +80,7 @@ a {
   font-style: $primary-text-style;
   font-weight: $anchor-font-weight;
 }
+
+.slick-dots li button:before {
+    font-size: 24px !important;
+  }
