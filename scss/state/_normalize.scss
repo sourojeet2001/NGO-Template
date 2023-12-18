@@ -1,3 +1,4 @@
+// Firefox.
 @media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) {
   h1, h2, h3, h4, h5, a {
     font-weight: 500 !important;
@@ -7,17 +8,25 @@
       top: 26px;
     }
   }
-  .slick-dots {
-    li button:before {
-      font-size: 20px !important;
-    }
+  // .banner-slider .slick-dots li button:before {
+  //   font-size: 24px !important;
+  // }
+  .count--section1, .count--section2 {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+
+/** Safari */
+@media not all and (min-resolution: 0.001dpcm) {
+  h1, h2, h3, h4, h5, a {
+    font-weight: 500 !important;
   }
   .count--section1, .count--section2 {
     justify-content: flex-start;
     gap: 10px;
-
-    // @media screen and (min-width: 992px) {
-    //   gap: 20px !important;
-    // }
+  }
+  .blog-info a {
+    font-weight: 500 !important;
   }
 }
