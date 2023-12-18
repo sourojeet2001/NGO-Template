@@ -18,15 +18,31 @@
 }
 
 /** Safari */
-@media not all and (min-resolution: 0.001dpcm) {
-  h1, h2, h3, h4, h5, a {
-    font-weight: 500 !important;
-  }
-  .count--section1, .count--section2 {
-    justify-content: flex-start;
-    gap: 10px;
-  }
-  .blog-info a {
-    font-weight: 500 !important;
+// @media not all and (min-resolution: 0.001dpcm) {
+//   h1, h2, h3, h4, h5, a {
+//     font-weight: 500 !important;
+//   }
+//   .count--section1, .count--section2 {
+//     justify-content: flex-start;
+//     gap: 10px;
+//   }
+//   .blog-info a {
+//     font-weight: 500 !important;
+//   }
+// }
+
+/* Target Safari */
+@media not all and (min-resolution: 0.001dpcm) { 
+  @supports (-webkit-appearance:none) and (not (overflow:-webkit-marquee)) {
+    h1, h2, h3, h4, h5, a {
+      font-weight: 500 !important;
+    }
+    .count--section1, .count--section2 {
+      justify-content: flex-start;
+      gap: 10px;
+    }
+    .blog-info a {
+      font-weight: 500 !important;
+    }
   }
 }
