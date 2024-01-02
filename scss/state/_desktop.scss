@@ -28,6 +28,10 @@
     margin-top: 200px;
     margin-left: 82px;
   }
+
+  .blogs-wrapper {
+    gap: 100px;
+  }
 }
 @media screen and (max-width: 1320px) {
   .menu-item-list a {
@@ -42,5 +46,11 @@
         width: 336px;
       }
     }
+  }
+  .blogs-wrapper {
+    gap: 60px;
+  }
+  .blog-inner-card {
+    width: 700px;
   }
 }

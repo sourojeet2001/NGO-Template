@@ -1,0 +1,74 @@
+.contribution-wrapper {
+  padding: 50px 0;
+  margin-top: 50px;
+}
+.contribution-block {
+  width: 50%;
+  flex: 50%;
+}
+.contribution-details {
+  p {
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #525560;
+    line-height: 26px;
+  }
+}
+.donation-cards {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.donation-inner-card {
+  font-size: 16px;
+  font-weight: 400;
+  color: #525560;
+  line-height: 26px;
+  width: 33.33%;
+  flex: 33.33;
+}
+
+.tab-container{
+	// margin: 5% 10%;
+	// background-color: #c1e3d9;
+	// padding: 3%;
+  margin-left: 50px;
+	border-radius: 4px;
+  height: 100%;
+}
+.tab-menu{}
+.tab-menu ul{
+	margin: 0;
+	padding: 0;
+}
+.tab-menu ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+.tab-menu ul li a{
+	text-decoration: none;
+	// color: rgba(0,0,0,0.4);
+	// background-color: #b4cbc4;
+	padding: 7px 20px;
+	// border-radius: 4px;
+
+}
+.tab-menu ul li a.active-a{
+	// background-color: #588d7d;
+	// color: #ffffff;
+  border-bottom: 2px solid #F9CF64;
+}
+.tab{
+	display: none;
+}
+.tab p{
+  padding-top: 30px;
+	text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
+  color: #525560;
+  line-height: 26px;
+}
+.tab-active{
+	display: block;
+}

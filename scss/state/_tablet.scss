@@ -388,6 +388,57 @@
       }
     }
   }
+
+  .donation-banner {
+    flex-direction: column-reverse !important;
+  }
+  .donation-child-text-box {
+    // margin: 0 auto;
+    // padding-top: 90px;
+    width: 100%;
+    // padding-left: 10%;
+    // margin: 0 auto;
+  }
+  // .donation-header {
+  //   padding-left: 10px;
+  // }
+  .donation-banner-image {
+    height: 80vh;
+
+    .mapbg {
+    
+        img {
+          object-fit: contain;
+        }
+    }
+  }
+  .tab-container {
+    margin-left: 0;
+  }
+
+  .contribution-inner {
+    gap: 50px;
+  }
+  .donation-inner-card {
+    // width: 50%;
+    // flex: 50;
+  }
+  .donations-box {
+    gap: 60px;
+  }
+  .donation-info .blogs-info-inner-box {
+    padding: 10px;
+}
+.donations-inner-box {
+  width: 400px;
+  flex: 0;
+  .donation-image, .donation-info {
+    width: 400px;
+  }
+}
+.donation-info .blogs-info-inner-box {
+    padding: 40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -420,5 +471,15 @@
     &::before {
       transform: translate(111px,31px);
     }
+  }
+
+  // .donation-banner-image {
+  //   height: 70dvh;
+  // }
+  .donation-child-text-box {
+    // padding-left: 6%;
+  }
+  .donations-box {
+    gap: 70px;
   }
 }

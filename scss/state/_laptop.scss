@@ -226,4 +226,43 @@
       transform: translate(116px,30px);
     }
   }
+
+
+
+  .donation-banner {
+    gap: 30px;
+  }
+  .donation-child-text-box {
+    padding-left: 80px;
+  }
+  .donations-box {
+    justify-content: center;
+    // gap: 70px;
+    flex-wrap: wrap;
+  }
+  .donations-inner-box {
+    width: 430px;
+    &:last-child:nth-child(odd) {
+      // padding-top: 90px;
+      align-items: center;
+
+      .donation-image, .donation-info {
+        // width: 50%;
+      }
+    }
+  }
+  .donation-figures {
+    gap: 0;
+  }
+  .donation-info {
+    .blogs-info-inner-box {
+      padding: 26px;
+    }
+  }
+
+
+  
+  .blogs-sidebar-wrapper {
+    padding: 34px 22px;
+  }
 }

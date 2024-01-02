@@ -90,25 +90,25 @@
   bottom: 32%;
 
   &:hover > .logoborder{
-  animation: rotate-center 2s ease-in-out 2s infinite both ;
+  // animation: rotate-center 2s ease-in-out 2s infinite both ;
   }
 }
 .logoborder {
   position: absolute;
   left: -30px;
   bottom: -26px;
-  animation: rotate-center 2s ease-in-out 2s both ;
+  // animation: rotate-center 2s ease-in-out 2s both ;
 }
 
 
-@keyframes rotate-center {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+// @keyframes rotate-center {
+//   0% {
+//     transform: rotate(0);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
 .pointer1 {
   bottom: 70px;
   left: 57%;

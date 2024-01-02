@@ -1,7 +1,7 @@
 @use "../base/mixins" as *;
 @media screen and (max-width: 476px) {
   .container {
-    max-width: 100%;
+    max-width: 96%;
   }
   .banner-slider {
     height: calc(80dvh - 121px);
@@ -150,7 +150,7 @@
     }
   }
   .special-inner-text-box {
-    padding-left: 44px;
+    // padding-left: 44px;
   }
   .services--children {
     .container {
@@ -509,6 +509,22 @@
   .btn-default {
     top: 70%;
   }
+
+  .donation-banner-image {
+    height: 40dvh;
+  }
+  .donations-inner-box {
+    width: 300px;
+    .donation-image, .donation-info {
+      width: 300px;
+    }
+  }
+  .donation-info .blogs-info-inner-box {
+    padding: 28px;
+  }
+  .donation-figures {
+      gap: 16px !important;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -550,7 +566,7 @@
     }
   }
   .special-inner-text-box {
-    padding-left: 44px;
+    // padding-left: 44px;
   }
   .animated-logo {
     left: 18px;
@@ -676,5 +692,17 @@
 
   .btn-default {
     top: 70%;
+  }
+  .donation-header {
+    padding-left: 16px;
+  }
+  .tab-menu ul li a {
+    padding: 7px 8px
+  }
+  .donations-inner-box {
+    width: 250px;
+    .donation-image, .donation-info {
+      width: 250px;
+    }
   }
 }

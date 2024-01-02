@@ -1,0 +1,140 @@
+@use "./articles" as *;
+@use "../base/variables" as *;
+
+.progressbar {
+  flex-wrap: nowrap;
+  align-items: center;
+  span {
+    padding: 10px;
+    color: white;
+    background: $foundation-primary-red;
+    border-radius: 50px;
+  }
+  &::before {
+    display: inline-block;
+    content: "";
+    border-top: 2px solid #b4252d;
+    width: 70%;
+  }
+
+  &:after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #b4252d;
+    width: 20%;
+  }
+}
+.donations-box {
+  gap: 30px;
+}
+.donations-inner-box {
+  width: 33.33%;
+  flex: 33.33;
+
+  &:nth-child(1) {
+    .donation-info {
+      background: lighten($foundation-primary-red, 50%);
+    }
+  }
+  &:nth-child(2) {
+    .donation-info {
+      background: $foundation-primary-green;
+    }
+    .progressbar {
+      &:before,
+      &:after {
+        border-color: #1A7C5F;
+      }
+      span {
+        background: #1A7C5F;
+      }
+    }
+  }
+  &:nth-child(3) {
+    .donation-info {
+      background: $foundation-primary-yellow;
+    }
+    .progressbar {
+      &:before, &:after {
+        border-color: #DC9C1A;
+      }
+      span {
+        background: #DC9C1A;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    .donation-category {
+      background: #1A7C5F;
+    }
+  }
+  &:nth-child(3) {
+    .donation-category {
+      background: #DC9C1A;
+    }
+  }
+}
+.donate {
+  width: 154px !important;
+  background: white !important;
+  color: black !important;
+  padding: 16px 32px;
+  // margin-bottom: 20px;
+  // display: block;
+}
+.donation-image {
+  width: 100%;
+  height: 324px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+.donation-info {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+
+  .blogs-tile {
+    font-family: 'Roboto-medium';
+    font-size: 20px;
+  }
+  .blogs-info-inner-box {
+    padding: 40px;
+  }
+
+}
+.donation-figures {
+  // gap: 100px;
+  justify-content: space-between;
+
+  .details-inner-box {
+    p {
+      font-size: 16px;
+    }
+    span {
+      text-transform: uppercase;
+      font-family: Roboto-medium;
+    }
+  }
+}
+.donation-category {
+    background: $foundation-primary-red;
+    position: absolute;
+    top: -24px;
+    right: 34px;
+    padding: 14px 16px;
+    border-radius: 50px;
+    color: whitesmoke;
+
+    span {
+      font-size: 16px;
+      font-family: 'Roboto-medium';
+      line-height: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;  
+    }
+}

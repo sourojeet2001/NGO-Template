@@ -21,7 +21,7 @@
     margin-left: 0;
   }
   .special-inner-text-box {
-    padding-left: 40px;
+    // padding-left: 40px;
   }
   .animated-logo {
     left: 58px;
@@ -29,6 +29,18 @@
   }
   .counts {
     padding-left: 40px;
+  }
+
+  
+  .donation-inner-card {
+    width: 50%;
+    flex: 50%;
+    padding-left: 0;
+  }
+  .donation-child-text-box {
+    .counts {
+      padding-left: 0;
+    }
   }
 }
 

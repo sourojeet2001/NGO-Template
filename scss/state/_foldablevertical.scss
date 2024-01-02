@@ -215,4 +215,33 @@
   .brand-logo {
     height: 40px;
   }
+
+  
+  .donations-inner-box {
+    width: 230px;
+    .donation-image, .donation-info {
+      width: 230px;
+    }
+  }
+  .donation-info .blogs-info-inner-box {
+    padding: 18px;
+    padding-top: 30px;
+  }
+  .donate {
+    padding: 12px 8px
+  }
+  .donation-figures {
+    .details-inner-box {
+       p{
+        font-size: 12px;
+        line-height: 14px;
+       }
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+  .tab-menu ul li a {
+    padding: 7px 2px;
+  }
 }

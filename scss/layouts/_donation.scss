@@ -1,0 +1,21 @@
+.donation-header {
+  padding-left: 22px;
+}
+.donation-wrapper {
+  padding: 50px 0;
+}
+
+
+.donation-cards {
+// align-items: center;
+}
+.donation-inner-card {
+  width: 33.33%;
+  flex: 33.33%;
+  padding: 20px;
+  // padding-top: 0;
+
+  &:nth-child(1) {
+    padding-left: 0;
+  }
+}

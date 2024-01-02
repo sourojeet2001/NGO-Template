@@ -1,5 +1,6 @@
 @use "../base/mixins" as *;
 @use "../base/variables" as *;
+@use "../modules/typography" as *;
 
 .blogs-header {
   margin-top: 40px;
@@ -163,4 +164,3 @@
     line-height: 48px;
   }
 }
-

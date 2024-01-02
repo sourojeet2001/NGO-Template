@@ -255,6 +255,17 @@
   .newsletter {
     margin-left: 0;
   }
+  .donation-child-text-box {
+    padding-left: 80px;
+  }
+  .donations-box {
+    flex-wrap: wrap;
+  }
+  .donation-figures {
+    .details-inner-box {
+      gap: 4px;
+    }
+  }
 }
 
 @media screen and (min-width:1020px) and (min-height: 1030px) {

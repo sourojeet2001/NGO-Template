@@ -1,0 +1,148 @@
+.blogs-wrapper {
+  gap: 126px;
+  margin-top: 90px;
+}
+.blogs-main-wrapper {
+  // width: 70%;
+  // flex: 70%
+}
+.blogs-sidebar-wrapper {
+  // width: 30%;
+  // flex: 30%;
+}
+.blog-inner-card {
+  width: 766px;
+  // height: 406px;
+  padding-bottom: 70px;
+}
+.blog-image {
+  // width: 766px;
+  // height: 406px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+}
+.blog-inner-card {
+  align-items: flex-start;
+  // gap: 77px;
+}
+.blog-details {
+  padding-top: 77px;
+  gap: 28px;
+  border-bottom: 2px solid #9799A0;
+  padding-bottom: 28px;
+  h2 {
+    color: var(--Primary-text, #1D2130);
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+.blog-publication-date, .blog-stats, .blog-comments, .blog-authoring-info {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+.blog-authoring-info {
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+.blog-stats {
+  padding-top: 28px;
+  gap: 30px;
+}
+
+.blogs-sidebar-wrapper {
+  padding: 37px 41px;
+  background: #FCF5E8;
+  border-radius: 10px;
+}
+.sidebar-inner {
+  align-items: flex-start;
+  gap: 34px;
+}
+.searchblock {
+  svg {
+    position: relative;
+    &::after{
+      content: "";
+      border-bottom: 1px solid;
+      padding-top: 10px;
+      width: 100px;
+      position: absolute;
+    }
+  }
+}
+.searchbar {
+  padding-top: 34px;
+  
+  input {
+    background: #FCF5E8;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: -20px;
+    padding-left: 30px;
+    padding-right: 80px;
+
+    &:focus {
+      outline: none;
+      // border: none;
+    }
+  }
+  button {
+    padding: 0;
+    background: transparent;
+    border: none;
+    padding-bottom: 10px;
+  }
+}
+.category-section {
+  gap: 34px;
+}
+.category-items {
+  p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 2px;
+  }
+}
+.recent-posts-section {
+  gap: 42px;
+}
+.post-items {
+  gap: 42px;
+}
+.post-item-inner-box {
+  width: 300px;
+  gap: 20px;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.searchblock, .category-section, .recent-posts-section {
+  h5 {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

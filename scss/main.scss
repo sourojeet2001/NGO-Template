@@ -14,5 +14,10 @@
 @use "./layouts/articles";
 @use "./layouts/contactus";
 @use "./layouts/footer";
+@use "./layouts/donation";
+@use "./layouts/contribution";
+@use "./layouts/help";
+@use "./layouts/donation-banner";
+@use "./layouts/blogs";
 @use "./base/mixins";
 @use "./state/normalize";
