@@ -32,13 +32,15 @@
       <div class="menu-btn"><span class="menu-btn__burger"></span></div>
       <div class="flex-wrap primary-navbar">
         <div class="brand-logo">
-          <img alt="brand-logo" src="./assets/icons/brandlogo.webp" class="logo" />
+          <a href="./index.html">
+            <img alt="brand-logo" src="./assets/icons/brandlogo.webp" class="logo" />
+          </a>
         </div>
         <!-- Primary Menu Start. -->
         <div class="flex-center primary-menu">
           <ul class="flex-center menu-item-list">
             <li class="menu-items active">
-              <a href="#" class="menu-items__link">Home</a>
+              <a href="./index.html" class="menu-items__link">Home</a>
             </li>
             <li class="menu-items">
               <a href="#" class="menu-items__link">About Us</a>
@@ -128,7 +130,8 @@
         <div class="map donation-banner-image" data-aos="fade-up" data-aos-duration="3000">
           <div class="mapbg">
             <img alt="map" src="./assets/images/bannerside.webp" />
-          </div </div>
+          </div>
+        </div>
       </section>
       <!-- Banner Section End. -->
 
@@ -273,7 +276,7 @@
       <!-- Blog Section End. -->
 
       <!-- Contribution Section Start. -->
-      <div class="contribution-wrapper">
+      <section class="contribution-wrapper">
         <div class="contribution-inner flex-wrap">
           <div class="contribution-block">
             <div class="contribution-details flex-column" 
@@ -322,11 +325,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Contribution Section End. -->
 
       <!-- Donation Section Start. -->
-      <div class="donation-wrapper">
+      <section class="donation-wrapper">
         <div class="donation-card-deck">
           <div class="donation-cards flex-wrap">
             <div class="donation-inner-card"
@@ -357,7 +360,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Donation Section End. -->
 
       <!-- Contact Us Section Start. -->
@@ -508,7 +511,7 @@
           <h4>Newsletter</h4>
           <h3>Subscribe to get latest updates</h3>
           <label for="newsletter">Newsletter</label>
-          <form id="newsletter" action="/action_page.php">
+          <form id="newsletter" name="newsletter" action="/action_page.php">
             <label for="email_id">Your Email</label>
             <input type="email" id="email_id" placeholder="Your email" name="email_id" /><br />
             <input type="submit" value="Submit" class="submit-btn" />
