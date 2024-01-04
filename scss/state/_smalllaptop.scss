@@ -266,6 +266,38 @@
       gap: 4px;
     }
   }
+
+  .blogs-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-inner {
+    flex-direction: row;
+    // flex-basis: 50%;
+    flex-wrap: wrap;
+  }
+  .searchblock, .category-section {
+    flex-basis: 47%;
+    flex-shrink: 0;
+  }
+  .searchbar {
+    justify-content: flex-start;
+    flex-wrap: nowrap !important;
+  }
+  .recent-posts-section {
+    flex-grow: 1;
+
+    h5 {
+      text-align: center;
+    }
+  }
+  .post-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 @media screen and (min-width:1020px) and (min-height: 1030px) {

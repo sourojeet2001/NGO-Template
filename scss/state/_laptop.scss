@@ -259,9 +259,10 @@
       padding: 26px;
     }
   }
-
-
-  
+  .blogs-wrapper {
+    gap: 10px;
+    flex-wrap: wrap !important;
+  }
   .blogs-sidebar-wrapper {
     padding: 34px 22px;
   }

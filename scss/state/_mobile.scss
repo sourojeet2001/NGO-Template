@@ -525,6 +525,32 @@
   .donation-figures {
       gap: 16px !important;
   }
+  .blog-inner-card {
+    width: 350px;
+  }
+  .blog-details {
+    h2 {
+      font-size: 34px;
+      line-height: 42px;
+    }
+  }
+
+  .post-items {
+    justify-content: flex-start;
+  }
+  .recent-posts-section {
+    h5 {
+      text-align: left;
+    }
+  }
+  
+  .post-items {
+    flex-direction: column !important;
+    width: fit-content;
+  }
+  .post-item-inner-box {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -704,5 +730,18 @@
     .donation-image, .donation-info {
       width: 250px;
     }
+  }
+
+  .blog-inner-card {
+    width: 250px;
+  }
+
+  .searchblock, .category-section {
+    flex-basis: 100%;
+    flex-shrink: 0;
+  }
+
+  .searchbar input {
+    padding-right: 0;
   }
 }

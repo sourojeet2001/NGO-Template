@@ -482,4 +482,12 @@
   .donations-box {
     gap: 70px;
   }
+  .blog-inner-card {
+    width: 600px;
+  }
+
+  .searchblock, .category-section {
+    flex-basis: 30%;
+    flex-shrink: 0;
+  }
 }

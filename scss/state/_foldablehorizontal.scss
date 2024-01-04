@@ -68,4 +68,19 @@
   .counts {
     width: 80%;
   }
+  .blog-inner-card {
+    width: 434px;
+  }
+
+  .blog-details {
+    h2 {
+      font-size: 38px;
+      line-height: 48px;
+    }
+  }
+
+  .searchblock, .category-section {
+    flex-basis: 100%;
+    flex-shrink: 0;
+  }
 }

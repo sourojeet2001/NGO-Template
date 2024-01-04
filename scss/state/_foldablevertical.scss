@@ -244,4 +244,41 @@
   .tab-menu ul li a {
     padding: 7px 2px;
   }
+
+  .blogs-sidebar-wrapper {
+    padding: 34px 10px !important;
+  }
+
+  .post-item-inner-box {
+    width: 150px;
+  }
+  .recent-posts-section h4, .searchblock h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+
+
+  .category-section {
+    width: fit-content;
+  }
+  .category-items {
+    p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  .searchbar {
+    svg {
+      height: 15px;
+      width: 15px;
+    }
+
+    input {
+      width: 120px;
+      padding-left: 25px;
+      margin-left: -14px;
+    }
+  }
 }

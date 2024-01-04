@@ -1,14 +1,13 @@
+@use "../modules/typography" as *;
+
 .blogs-wrapper {
   gap: 126px;
   margin-top: 90px;
 }
-.blogs-main-wrapper {
-  // width: 70%;
-  // flex: 70%
-}
 .blogs-sidebar-wrapper {
-  // width: 30%;
-  // flex: 30%;
+  h5 {
+    font-family: Roboto-medium;
+  }
 }
 .blog-inner-card {
   width: 766px;
