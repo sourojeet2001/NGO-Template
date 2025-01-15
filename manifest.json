@@ -2,8 +2,8 @@
   "name": "Sourojeet",
   "short_name": "Sourojeet",
   "start_url": ".",
-  "background_color": "#000",
-  "theme_color": "#000",
+  "background_color": "#fff",
+  "theme_color": "#fff",
   "display": "standalone",
   "icons": [
     {
